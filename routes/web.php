@@ -34,6 +34,6 @@ Route::group(["middleware" => "auth"], function(){
 
 	Route::get("scripts/sample", "ScriptController@showSample"); //サンプル画面
 
-	Route::delete("diary/{param}/delete", 'DiaryController@destroy');
+	Route::delete("scripts/{param}/delete", 'ScriptController@destroy');
 
 });
