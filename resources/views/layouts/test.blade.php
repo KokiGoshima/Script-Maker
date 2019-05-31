@@ -27,18 +27,30 @@
   <!--ヘッダー-->
   <header>
     <nav>
-      <div class="logo">
-      <a href="{{ url('/') }}">Script maker</a>
-      </div>
 
       @guest
+        <div class="logo">
+        <a href="{{ url('/') }}">Script maker</a>
+        </div>
         <ul class="clearfix">
           <li><a href="{{ route('register') }}" >サインアップ</a></li>
           <li><a href="{{ route('login') }}" >ログイン</a></li>
         </ul>
       @else
+        <div class="logo">
+        <a href="{{ url('/scripts') }}">Script maker</a>
+        </div>
         <ul class="clearfix">
           <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a></li>
+          <li>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            {{-- <a href="{{ route('logout') }}"> --}}
+            ログアウト(ダミー)
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
+          </li>
           <li><a href="#" >マイスクリプト</a></li>
           <li><a href="#" >完成例一覧</a></li>
         </ul>
