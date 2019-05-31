@@ -10,6 +10,11 @@ body{
 	line-height : 1.6;
   }
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 
 /*=======================ヘッダー領域=======================*/
@@ -93,6 +98,9 @@ header nav ul li a img:hover{
 
 
 /*=======================フッター領域=======================*/
+footer{
+  margin-top: auto; 
+}
 .copyright{
 	background-color : #065fe3;
 	color : #ffffff;
