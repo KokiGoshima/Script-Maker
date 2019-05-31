@@ -22,26 +22,35 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 
+
+<body>
   <!--ヘッダー-->
   <header>
     <nav>
       <div class="logo">
-      <a href="#">Script maker</a>
+      <a href="{{ url('/') }}">Script maker</a>
       </div>
-      <ul class="clearfix">
-        <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a></li>
-        <li><a href="#" >マイスクリプト</a></li>
-        <li><a href="#" >完成例一覧</a></li>
-      </ul>
+
+      @guest
+        <ul class="clearfix">
+          <li><a href="{{ route('register') }}" >サインアップ</a></li>
+          <li><a href="{{ route('login') }}" >ログイン</a></li>
+        </ul>
+      @else
+        <ul class="clearfix">
+          <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a></li>
+          <li><a href="#" >マイスクリプト</a></li>
+          <li><a href="#" >完成例一覧</a></li>
+        </ul>
+      @endguest
     </nav>
   </header>
 
   <!--コンテンツ-->
-  <body>
-    <div id="contents">
-      <!-- コンテンツをここに書いてください -->
-    </div>  
-  </body>
+  <div id="contents">
+      @yield('content')
+  </div>  
+</body>
 
   <!--フッター-->
   <footer>
