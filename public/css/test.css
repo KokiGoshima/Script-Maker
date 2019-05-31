@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+/*=======================ページ全体=======================*/
+body{
+  background-color : #ffffff;
+  font-size : 16px;
+  color : #000000;
+  font-family : "ヒラギノ角ゴ Pro W3","メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	line-height : 1.6;
+  }
+
+
+
+/*=======================ヘッダー領域=======================*/
+header{
+  width : 100%;
+  font-size : 1em;
+  color : #ffffff;
+  background-color : #065fe3;
+  height : 80px;
+}
+
+header nav{
+  width : 1300px;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+header nav .logo{
+  font-size : 30px;
+  font-family: 'Anton', sans-serif;
+  text-align : center;
+  width : 200px;
+  float : left;
+  line-height: 80px;
+}
+
+header nav .logo a{
+  text-decoration : none;
+  background-color : #065fe3;
+  color : #ffffff; 
+  /* color : #f64019;  */
+  display : block;
+}
+
+header nav .logo a:hover{
+  color: rgba(255,255,255, 0.7);
+}
+
+header nav li{
+  font-size : 16px;
+  list-style-type : none;
+  line-height : 5;
+  text-align : center;
+  width : 150px;
+  float : right;
+}
+
+header nav ul li a{
+  text-decoration : none;
+  background-color : #065fe3;
+  color : #ffffff;
+  display : block;
+  line-height: 80px;
+}
+
+header nav ul li a:hover{
+  color: rgba(255,255,255, 0.7);
+}
+
+header nav ul li a img{
+  display : block;
+  padding-top : 15px;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+header nav ul li a img:hover{
+  opacity: 0.7;
+
+}
+
+.clearfix::after{
+  content : "";
+  display : block;
+  clear : both;
+}
+
+
+/*=======================コンテンツ領域=====================*/
+
+
+
+/*=======================フッター領域=======================*/
+.copyright{
+	background-color : #065fe3;
+	color : #ffffff;
+	text-align : center;  
+	font-size : small;
+}
