@@ -23,7 +23,7 @@
 </head>
 
 
-<body>
+<body class="wrapper">
   <!--ヘッダー-->
   <header>
     <nav>
