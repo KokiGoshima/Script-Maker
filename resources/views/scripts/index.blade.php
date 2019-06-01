@@ -17,6 +17,10 @@
   ファイル一覧 | Script maker
 @endsection
 
+@section("indexCss")
+  <link rel="stylesheet" href="#">
+@endsection
+
 @section('content')
   <section id="wrapper">
     <div>
