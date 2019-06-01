@@ -31,7 +31,7 @@ header ul li{float:left;text-transform:uppercase;font-size:14px;color:#333;margi
 /*header ul li.active{color:#f95536}*/
 /*nav{position:fixed;top:100px;left:0;height:calc(100vh - 100px);width:100px;z-index:3;background:rgba(0,0,0,.7)}*/
 
-.input-wrap,.left,.right,nav ul{position:relative}
+/*.input-wrap,.left,.right,nav ul{position:relative}*/
 /*#searchbar,.input-wrap i{background:#fff;color:#333}*/
 /*.main{width:60%;float:left;margin-left:100px;margin-top:50px}*/
 .left{margin-top:30px}
