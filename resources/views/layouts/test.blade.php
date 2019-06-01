@@ -68,7 +68,7 @@
   <!--コンテンツ-->
   <div id="contents">
       @yield('content')
-  </div>  
+  </div>
 </body>
 
   <!--フッター-->
