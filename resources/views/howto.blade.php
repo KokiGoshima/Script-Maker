@@ -1,7 +1,7 @@
-@extends("layouts/test")
+@extends("layouts.test")
 
 @section("title")
-	スクリプトメーカー | Script maker
+	スクリプトメーカー | Script Maker
 @endsection
 
 @section("howtoCss")
@@ -22,7 +22,7 @@
       <!-- ドラッグ＆ドロップ動作の動画 -->
 	  	<div class="video-content">
 					<!-- <video src="video1.mov" loop autoplay muted></video> -->
-					<img src="img/allscriptscreen.png">
+					<img src="{{asset('img/allscriptscreen.png')}}" alt="画面説明">
 	 	　 </div>
 　</div>
 
@@ -34,7 +34,7 @@
 		<div class="col-md-6">
 		<!-- <h4>定型表現</h4> -->
 		      <h4 class="subheading">定型表現</h4>
-		<p class="text-muted">トピック別定型フレーズを厳選。選択項目から好みの表現を選択しするだけ。修正が必要な場合は、直接入力。</p>
+		<p class="text-muted">トピック別定型フレーズを厳選。選択項目から好みの表現を選択するだけ。修正が必要な場合は、直接入力。</p>
 		</div>
 		</div>
 		<div class="row">

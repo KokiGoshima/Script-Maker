@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="{{asset('css/test.css')}}">
     <link rel="stylesheet" href="{{asset('css/reset.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     @yield("howtoCss")
     @yield("indexCss")
+    @yield("editCss")
     @yield("showSampleCss")
 
     <!-- Fonts -->
@@ -33,7 +35,7 @@
 
       @guest
         <div class="logo">
-        <a href="{{ url('/') }}">Script maker</a>
+        <a href="{{ url('/') }}">Script Maker</a>
         </div>
         <ul class="clearfix">
           <li><a href="{{ route('register') }}" >サインアップ</a></li>
@@ -41,7 +43,7 @@
         </ul>
       @else
         <div class="logo">
-        <a href="{{ url('/scripts') }}">Script maker</a>
+        <a href="{{ url('/scripts') }}">Script Maker</a>
         </div>
         <ul class="clearfix">
           <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a>
@@ -68,7 +70,7 @@
   <!--コンテンツ-->
   <div id="contents">
       @yield('content')
-  </div>  
+  </div>
 </body>
 
   <!--フッター-->
