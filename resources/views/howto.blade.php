@@ -34,7 +34,7 @@
 		<div class="col-md-6">
 		<!-- <h4>定型表現</h4> -->
 		      <h4 class="subheading">定型表現</h4>
-		<p class="text-muted">トピック別定型フレーズを厳選。選択項目から好みの表現を選択しするだけ。修正が必要な場合は、直接入力。</p>
+		<p class="text-muted">トピック別定型フレーズを厳選。選択項目から好みの表現を選択するだけ。修正が必要な場合は、直接入力。</p>
 		</div>
 		</div>
 		<div class="row">
