@@ -14,7 +14,7 @@
 @extends('layouts.test')
 
 @section('title')
-  ファイル一覧 | Script maker
+  ファイル一覧 | Script Maker
 @endsection
 
 @section("indexCss")
@@ -28,9 +28,9 @@
       <h1>Your Script</h1>
       <div class="main">
         <div class="left">
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script">New</p></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="" target=”_blank”><i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script">New</p></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
 
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="{{ route('scripts.edit', ['id' => 1]) }}" target=”_blank”><i class="fa far fa-file-alt
           fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
           <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
           fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>

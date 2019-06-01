@@ -1,7 +1,7 @@
 @extends("layouts.test")
 
 @section("title")
-	スクリプトメーカー | Script maker
+	スクリプトメーカー | Script Maker
 @endsection
 
 @section("howtoCss")

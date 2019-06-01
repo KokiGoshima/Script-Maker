@@ -1,11 +1,11 @@
 @extends('layouts.test')
 
 @section('title')
-  作成画面 | Script maker
+  作成画面 | Script Maker
 @endsection
 
-@section("scriptCss")
-  <link rel="stylesheet" href="{{asset('/css/script.css')}}">
+@section("editCss")
+  <link rel="stylesheet" href="{{asset('/css/edit.css')}}">
 @endsection
 
 @section('content')

@@ -18,7 +18,7 @@
 
     @yield("howtoCss")
     @yield("indexCss")
-    @yield("scriptCss")
+    @yield("editCss")
     @yield("showSampleCss")
 
     <!-- Fonts -->
@@ -35,7 +35,7 @@
 
       @guest
         <div class="logo">
-        <a href="{{ url('/') }}">Script maker</a>
+        <a href="{{ url('/') }}">Script Maker</a>
         </div>
         <ul class="clearfix">
           <li><a href="{{ route('register') }}" >サインアップ</a></li>
@@ -43,7 +43,7 @@
         </ul>
       @else
         <div class="logo">
-        <a href="{{ url('/scripts') }}">Script maker</a>
+        <a href="{{ url('/scripts') }}">Script Maker</a>
         </div>
         <ul class="clearfix">
           <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a>
