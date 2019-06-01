@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <link rel="stylesheet" href="yourFiles.css"> <!-- 追加 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> <!-- 追加 -->
-</head> --}}
+  <link rel="stylesheet" href="yourFiles.css"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+</head> --}} 
 {{-- <body> --}}
 @extends('layouts.test')
 
@@ -18,7 +18,7 @@
 @endsection
 
 @section("indexCss")
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="css/index.css">
 @endsection
 
 @section('content')
@@ -100,4 +100,4 @@
 <script type="text/javascript" src="yourFiles.js"></script> <!-- 追加 -->
 @endsection
 {{-- </body>
-</html> --}}
+</html>
