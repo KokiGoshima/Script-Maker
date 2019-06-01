@@ -18,6 +18,7 @@
 
     @yield("howtoCss")
     @yield("indexCss")
+    @yield("scriptCss")
     @yield("showSampleCss")
 
     <!-- Fonts -->
