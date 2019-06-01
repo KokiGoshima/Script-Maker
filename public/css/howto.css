@@ -1,0 +1,81 @@
+/*文字とドラック＆ドロップ動作動画*/
+.main-contents{
+    margin-top: 100px;
+    margin-bottom:100px;
+    margin-right: 60px;
+    margin-left: 100px;
+}
+
+
+/*文字の部分全体*/
+.content{
+    float: left;
+    width: 580px;
+    margin-top: 100px;
+}
+/*太文字部分*/
+.about-content{
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+/*小文字部分*/
+.about2-content{
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+/*文字部分のフェードインアニメーション*/
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+/*ドラック＆ドロップ動作の動画*/
+video{
+    height:50%;
+    width: 50%;
+}
+
+/*ビデオのサイズ*/
+.video-content img{
+    height:400px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+
+/*bootsnipp  css*/
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}
+
+
+.subheading{
+    margin-top:50px;
+}
