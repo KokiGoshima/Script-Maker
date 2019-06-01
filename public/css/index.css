@@ -12,16 +12,16 @@ header .logo{float:left;font-size:20px;color:#fff;background:#f95536;line-height
 header ul{float:right;display:inline-block}
 header ul li{float:left;text-transform:uppercase;font-size:14px;color:#333;margin-left:40px;letter-spacing:1px}*/
 .folder p,h1{font-weight:300}
-/*header ul li.active{color:#f95536}
-nav{position:fixed;top:100px;left:0;height:calc(100vh - 100px);width:100px;z-index:3;background:rgba(0,0,0,.7)}
-.input-wrap,.left,.right,nav ul{position:relative}*/
+/*header ul li.active{color:#f95536}*/
+/*nav{position:fixed;top:100px;left:0;height:calc(100vh - 100px);width:100px;z-index:3;background:rgba(0,0,0,.7)}*/
+.input-wrap,.left,.right,nav ul{position:relative}
 /*#searchbar,.input-wrap i{background:#fff;color:#333}*/
 /*.main{width:60%;float:left;margin-left:100px;margin-top:50px}*/
 .left{margin-top:30px}
 .right{width:25%;float:right;background:#fff;padding:30px;height:70vh;min-height:500px;margin-top:50px;margin-bottom:10vh}
 .left:after,.right:after{content:"";display:table;clear:both}
-/*h1{font-size:50px;margin-bottom:30px}
-.input-wrap i{position:absolute;right:40px;top:50%}*/
+h1{font-size:50px;margin-bottom:30px}
+.input-wrap i{position:absolute;right:40px;top:50%}
 .folder,.item{margin-right:22px;position:relative}
 /*#searchbar{display:block;width:100%;padding:20px 40px;font-size:18px}
 #searchbar::-webkit-input-placeholder{color:#b9b9b9}
@@ -79,7 +79,7 @@ nav{position:fixed;top:100px;left:0;height:calc(100vh - 100px);width:100px;z-ind
   display: inline-block;
   padding: 12px 15px 0;
   width: inherit;
-  height: inherit;
+  height: 206px;
   text-decoration: none;
   cursor: pointer;
   filter: drop-shadow(3px 3px 3px rgba(0.05,0.05,0.05,0.05));
