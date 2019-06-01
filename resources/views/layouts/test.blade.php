@@ -41,7 +41,11 @@
         <a href="{{ url('/scripts') }}">Script maker</a>
         </div>
         <ul class="clearfix">
-          <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a></li>
+          <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a>
+            <ul>
+              <li><a href="#">ログアウト</a></li>
+            </ul>
+          </li>
           <li>
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             {{-- <a href="{{ route('logout') }}"> --}}

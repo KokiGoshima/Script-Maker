@@ -86,6 +86,17 @@ header nav ul li a img:hover{
 
 }
 
+header ul li ul{
+  display: none;
+}
+header li:hover ul{
+  display: block;
+}
+header ul li ul a{
+  display:block;
+}
+
+
 .clearfix::after{
   content : "";
   display : block;
