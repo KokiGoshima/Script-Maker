@@ -1,22 +1,36 @@
+
+
+/*header,nav ul,nav ul li{width:100%}*/
+/*.input-wrap i,header .logo{transform:translateY(-50%)}*/
+/*#searchbar,body,h1,h2,h3{font-family:Montserrat,sans-serif}*/
+/**{margin:0;padding:0;outline:0;list-style:none;text-decoration:none;box-sizing:border-box;color:#111;background:0 0;border:none}*/
+/*#searchbar,.right{border-radius:8px}*/
+
 body{background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;background-size:cover;font-weight:400;min-height:100vh}
 /*#wrapper{padding:100px 100px 50px 50px}
 >>>>>>> Tatsushi
+=======
+>>>>>>> koki_create
 h1,h2,h3{font-weight:300}
 header .logo,header ul li{display:inline-block;font-weight:700}
 header{position:fixed;top:0;left:0;background:#fff;height:100px;line-height:100px;padding:0 100px;z-index:999}
 header .logo{float:left;font-size:20px;color:#fff;background:#f95536;line-height:initial;position:relative;top:50%;padding:10px}
 header ul{float:right;display:inline-block}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> koki_create
 header ul li{float:left;text-transform:uppercase;font-size:14px;color:#333;margin-left:40px;letter-spacing:1px}
 .folder p,h1{font-weight:300}
 header ul li.active{color:#f95536}
 nav{position:fixed;top:100px;left:0;height:calc(100vh - 100px);width:100px;z-index:3;background:rgba(0,0,0,.7)}
+<<<<<<< HEAD
 =======
 header ul li{float:left;text-transform:uppercase;font-size:14px;color:#333;margin-left:40px;letter-spacing:1px}*/
 .folder p,h1{font-weight:300}
 /*header ul li.active{color:#f95536}*/
 /*nav{position:fixed;top:100px;left:0;height:calc(100vh - 100px);width:100px;z-index:3;background:rgba(0,0,0,.7)}*/
->>>>>>> Tatsushi
+
 .input-wrap,.left,.right,nav ul{position:relative}
 /*#searchbar,.input-wrap i{background:#fff;color:#333}*/
 /*.main{width:60%;float:left;margin-left:100px;margin-top:50px}*/
@@ -63,8 +77,9 @@ h1{font-size:50px;margin-bottom:30px}
 
 #wrapper h1{
   font-family:'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+
   margin-top: 20px;
-}
+
 
 .fa-file-alt{
 	/*border: solid black;*/
@@ -83,6 +98,7 @@ h1{font-size:50px;margin-bottom:30px}
   padding: 12px 15px 0;
   width: inherit;
   height: 206px;
+
   text-decoration: none;
   cursor: pointer;
   filter: drop-shadow(3px 3px 3px rgba(0.05,0.05,0.05,0.05));
