@@ -18,7 +18,7 @@
 @endsection
 
 @section("indexCss")
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="css/index.css">
 @endsection
 
 @section('content')
