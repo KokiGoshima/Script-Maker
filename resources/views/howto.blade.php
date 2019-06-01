@@ -5,7 +5,8 @@
 @endsection
 
 @section("howtoCss")
-<link rel="stylesheet" type="text/css" href="howto.css">
+{{-- <link rel="stylesheet" type="text/css" href="howto.css"> --}}
+<link href="{{asset('/css/howto.css')}}" rel="stylesheet">
 @endsection
 
 @section("content")
