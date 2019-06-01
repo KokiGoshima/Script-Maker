@@ -24,16 +24,16 @@ Auth::routes();
 
 Route::group(["middleware" => "auth"], function(){
 
-	Route::get("scripts/", "ScriptController@index"); //ファイル一覧画面
+	Route::get("scripts/", "ScriptController@index")->name('scripts.index'); //ファイル一覧画面
 
-	Route::post("scripts/create", "ScriptController@store"); //新規作成処理
+	Route::post("scripts/create", "ScriptController@store")->name('scripts.create'); //新規作成処理
 
-	Route::get("scripts/{param}/edit", "ScriptController@edit"); //編集画面
+	Route::get("scripts/{param}/edit", "ScriptController@edit")->name('scripts.edit'); //編集画面
 
-	Route::patch("scripts/{param}/update", "ScriptController@update"); //更新処理
+	Route::patch("scripts/{param}/update", "ScriptController@update")->name('scripts.update'); //更新処理
 
-	Route::get("scripts/sample", "ScriptController@showSample"); //サンプル画面
+	Route::get("scripts/sample", "ScriptController@showSample")->name('scripts.sample'); //サンプル画面
 
-	Route::delete("scripts/{param}/delete", 'ScriptController@destroy');
+	Route::delete("scripts/{param}/delete", 'ScriptController@destroy')->name('scripts.delete');
 
 });

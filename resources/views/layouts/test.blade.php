@@ -55,8 +55,8 @@
               @csrf
             </form>
           </li>
-          <li><a href="#" >マイスクリプト</a></li>
-          <li><a href="#" >完成例一覧</a></li>
+          <li><a href="{{ route('scripts.index') }}" >マイスクリプト</a></li>
+          <li><a href="{{ route('scripts.sample') }}" >完成例一覧</a></li>
         </ul>
       @endguest
     </nav>
