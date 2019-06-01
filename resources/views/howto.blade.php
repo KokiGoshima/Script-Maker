@@ -1,4 +1,4 @@
-@extends("layouts/test")
+@extends("layouts.test")
 
 @section("title")
 	スクリプトメーカー | Script maker
@@ -20,7 +20,7 @@
       <!-- ドラッグ＆ドロップ動作の動画 -->
 	  	<div class="video-content">
 					<!-- <video src="video1.mov" loop autoplay muted></video> -->
-					<img src="img/allscriptscreen.png">
+					<img src="{{asset('img/allscriptscreen.png')}}" alt="画面説明">
 	 	　 </div>
 　</div>
 
