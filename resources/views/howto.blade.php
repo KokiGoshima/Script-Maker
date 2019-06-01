@@ -6,6 +6,7 @@
 
 @section("howtoCss")
 <link rel="stylesheet" type="text/css" href="howto.css">
+@endsection
 
 @section("content")
 	<div class="main-contents">
