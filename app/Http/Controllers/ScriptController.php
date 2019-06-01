@@ -23,7 +23,7 @@ class ScriptController extends Controller
     }
 
     public function showSample(){
-    	
+    	return view("scripts.showSample");
     }
 
     public function destroy(){
