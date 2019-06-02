@@ -9,7 +9,7 @@
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="yourFiles.css"> <!-- 追加 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> <!-- 追加 -->
-</head> --}}
+</head> 
 {{-- <body> --}}
 @extends('layouts.test')
 
@@ -29,7 +29,7 @@
       <div class="main">
         <div class="left">
 
-          <form action="{{ route('scripts.create') }}" method="POST">
+          <form action="{{ route('scripts.create', ['id' => 1]) }}" method="POST">
             @csrf
               <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
                 {{-- <button> --}}
@@ -84,5 +84,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script> <!-- 追加 -->
 @endsection
-{{-- </body>
-</html>
