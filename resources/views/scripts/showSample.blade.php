@@ -32,34 +32,52 @@
 
   <div id="tab01" class="tab-contents">
     <h2>例 1</h2>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................
-  </div>
-  <div id="tab02" class="tab-contents" value="Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service.....">
+			<div class="copy">
+				<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+		　</div>
+	    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+	    ....................................................................................
+	  </p>
+	</div>
+
+  <div id="tab02" class="tab-contents">
     <h2>例 2</h2>
-    <p id="copyTarget">Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    <div class="copy">
+			<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+	　</div>
+    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
     ....................................................................................</p>
   </div>
+
   <div id="tab03" class="tab-contents">
     <h2>例 3</h2>
+    <div class="copy">
+			<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+	　</div>
     <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
     ....................................................................................</p>
   </div>
+
   <div id="tab04" class="tab-contents">
     <h2>例 4</h2>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
+    <div class="copy">
+			<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+	　</div>
+    <span>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................</span>
   </div>
+
   <div id="tab05" class="tab-contents">
     <h2>例 5</h2>
+    <div class="copy">
+			<button  class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+	　</div>
     <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
     ....................................................................................</p>
   </div>
 </div>
 
-	<div class="copy">
-			<button onclick="copyToClipboard()"><i class="far fa-copy"></i>コピー</button>
-	</div>
+	
 
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
