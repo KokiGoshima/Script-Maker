@@ -1,4 +1,4 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <title>Folder Library concept</title>
@@ -28,7 +28,15 @@
       <h1>Your Script</h1>
       <div class="main">
         <div class="left">
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="" target=”_blank”><i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script">New</p></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
+
+          <form action="{{ route('scripts.create') }}" method="POST">
+            @csrf
+              <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+                {{-- <button> --}}
+                  <i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script"><span><button>New</button></span></p></i><i class="fa fa-check" aria-hidden="true"></i>
+                {{-- </button> --}}
+              </div>
+          </form>
 
           <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="{{ route('scripts.edit', ['id' => 1]) }}" target=”_blank”><i class="fa far fa-file-alt
           fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
@@ -77,4 +85,4 @@
   <script type="text/javascript" src="js/index.js"></script> <!-- 追加 -->
 @endsection
 {{-- </body>
-</html> --}}
+</html>

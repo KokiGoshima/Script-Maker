@@ -11,7 +11,7 @@ class ScriptController extends Controller
     }
 
     public function store(){
-    	
+    	return view("scripts.edit");
     }
 
     public function edit(){

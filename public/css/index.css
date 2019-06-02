@@ -112,6 +112,12 @@ h1{font-size:50px;margin-bottom:30px}
   opacity: 0.5;
 }
 
+#folder button{
+  color: red;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 
 
 
