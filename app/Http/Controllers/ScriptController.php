@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Auth;
 class ScriptController extends Controller
 {
     public function index(){
-    	return view("scripts.index");
+        $scripts = Script::all();
+    	return view("scripts.index", ["scripts" => $scripts]);
     }
 
     public function store($id){

@@ -37,22 +37,16 @@
                 {{-- </button> --}}
               </div>
           </form>
-
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="{{ route('scripts.edit', ['id' => 1]) }}" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-
+  
+          @foreach($scripts as $script)
+            <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+              <a href="{{ route('scripts.edit', ['id' => 1]) }}" target=”_blank”>
+                <p>{{ $script->content }}</p>
+                <i class="fa far fa-file-alt fa-file-alt-script" aria-hidden="true"></i>
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </a>
+            </div>
+          @endforeach
 
         </div>
       </div>
