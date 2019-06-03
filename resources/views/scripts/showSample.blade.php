@@ -33,47 +33,51 @@
   <div id="tab01" class="tab-contents">
     <h2>例 1</h2>
 			<div class="copy">
-				<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+				<button class="btn btn-outline-primary" onclick="copy1()"><i class="far fa-copy"></i>全文コピー</button>
 		　</div>
-	    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+	    <span id="example1">1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
 	    ....................................................................................
-	  </p>
+	  </span>
 	</div>
 
   <div id="tab02" class="tab-contents">
     <h2>例 2</h2>
     <div class="copy">
-			<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+					<button class="btn btn-outline-primary" onclick="copy2()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
+    <span id="example2">2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................
+  </span>
   </div>
 
   <div id="tab03" class="tab-contents">
     <h2>例 3</h2>
     <div class="copy">
-			<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+				<button class="btn btn-outline-primary" onclick="copy3()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
+    <span id="example3">3  Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................
+  </span>
   </div>
 
   <div id="tab04" class="tab-contents">
     <h2>例 4</h2>
     <div class="copy">
-			<button class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+					<button class="btn btn-outline-primary" onclick="copy4()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <span>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</span>
+    <span id="example4">4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................
+  </span>
   </div>
 
   <div id="tab05" class="tab-contents">
     <h2>例 5</h2>
     <div class="copy">
-			<button  class="btn btn-outline-primary" onclick="copyToClipboard()"><i class="far fa-copy"></i></button>
+					<button class="btn btn-outline-primary" onclick="copy5()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
+    <span id="example5">5 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................
+  </span>
   </div>
 </div>
 
