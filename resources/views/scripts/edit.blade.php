@@ -23,7 +23,7 @@
         <div class="script">
             <p>スクリプト</p>
                 <input type="reset" value="クリア" onclick="return confirm('クリアボタンがクリックされました。本当に入力内容を削除してもよろしいですか？');">
-                <input type="submit" value="保存(ダミー)">
+                <input type="submit" value="保存(ダミー)" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
                 <textarea id="text1" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
         </div>
      </form>
