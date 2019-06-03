@@ -11,17 +11,20 @@
 @section('content')
 <div class="text">
     <h2>Test</h2>
-    <form name="scriptForm">
         <div class="textcontents">
             <input type="button" value="Thank you for coming my presentetion. " onClick="addTF(this.value)"><br>
             <input type="button" value="My name is naoki. " onClick="addTF(this.value)"><br>
             <input type="button" value="Today, I would like to explain three topic. " onClick="addTF(this.value)"><br>
             <input type="button" value="Please give comennt after my presentation. " onClick="addTF(this.value)"><br>
         </div>
+    <form action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
+        @csrf
+        @method("put")
         <div class="script">
             <p>スクリプト</p>
                 <input type="reset" value="クリア" onclick="return confirm('クリアボタンがクリックされました。本当に入力内容を削除してもよろしいですか？');">
-                <textarea id="text1" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
+                <input type="submit" value="保存(ダミー)">
+                <textarea id="text1" name="content" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
         </div>
     </form>
 </div>

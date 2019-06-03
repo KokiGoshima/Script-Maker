@@ -30,7 +30,7 @@ Route::group(["middleware" => "auth"], function(){
 
 	Route::get("scripts/{param}/edit", "ScriptController@edit")->name('scripts.edit'); //編集画面
 
-	Route::patch("scripts/{param}/update", "ScriptController@update")->name('scripts.update'); //更新処理
+	Route::put("scripts/{param}/update", "ScriptController@update")->name('scripts.update'); //更新処理
 
 	Route::get("scripts/sample", "ScriptController@showSample")->name('scripts.sample'); //サンプル画面
 

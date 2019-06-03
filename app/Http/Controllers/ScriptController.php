@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Script;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\CreateScript;
 
 class ScriptController extends Controller
 {
@@ -29,8 +30,11 @@ class ScriptController extends Controller
     	return view("scripts.edit", ["script" => $script]);
     }
 
-    public function update(){
-    	
+    public function update($id, CreateScript $request){
+    	$script = Script::find($id);
+        $script->content = $request->content;
+        $script->save();
+        return redirect()->route("scripts.edit", ['id' => $id]);
     }
 
     public function showSample(){
