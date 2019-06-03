@@ -66,14 +66,16 @@ body {
     position: relative;
     top: -1px;
     margin-top: 0;
+
+    margin-bottom:50px;
+
     background-color: #fff;
     height: 500px;
   }
 
 
-  .copy{
-  	text-align: center;
-  	margin-top: 20px;
-  	margin-bottom: 50px;
-  }
+.copy{
+  text-align: right;
+  margin-bottom: 10px;
 }
+
