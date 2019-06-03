@@ -32,7 +32,7 @@ class ScriptController extends Controller
 
     public function update($id, CreateScript $request){
     	$script = Script::find($id);
-        $script->content = $request->content;
+        $script->content = $request->textbox;
         $script->save();
         return redirect()->route("scripts.edit", ['id' => $id]);
     }
