@@ -82,11 +82,6 @@
   </div>
 </div>
 
-	
-=======
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................
-  </div>
   <div id="tab02" class="tab-contents" value="Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service.....">
     <h2>例 2</h2>
     <p id="copyTarget">Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
@@ -107,8 +102,11 @@
     <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
     ....................................................................................</p>
   </div>
-</div>
+ </div>
 
+	<div  class="return-script">
+		<input value="Scriptへ戻る" onclick="history.back();" type="button">
+	</div>
 
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
