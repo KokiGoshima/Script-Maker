@@ -52,7 +52,7 @@ body {
 .tab-contents {
   margin-top: 20px;
 }
-@media screen and (max-width: 1700px) {
+@media screen and (min-width: 768px) {
   .tab-button-outer {
     position: relative;
     z-index: 2;
