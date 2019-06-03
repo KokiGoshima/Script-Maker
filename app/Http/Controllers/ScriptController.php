@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Auth;
 class ScriptController extends Controller
 {
     public function index(){
-        $scripts = Script::all()->where("user_id", Auth::user()->id);
+        // $scripts = Script::all()->where("user_id", Auth::user()->id);
+        $scripts = Script::all();
     	return view("scripts.index", ["scripts" => $scripts]);
     }
 
