@@ -24,7 +24,9 @@ class ScriptController extends Controller
     }
 
     public function edit($id){
-    	return view("scripts.edit");
+        $script = Script::find($id);
+        // dd($script);
+    	return view("scripts.edit", ["script" => $script]);
     }
 
     public function update(){

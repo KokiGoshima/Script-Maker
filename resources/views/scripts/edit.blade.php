@@ -21,7 +21,7 @@
         <div class="script">
             <p>スクリプト</p>
                 <input type="reset" value="クリア" onclick="return confirm('クリアボタンがクリックされました。本当に入力内容を削除してもよろしいですか？');">
-                <textarea id="text1" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力"></textarea><br>
+                <textarea id="text1" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
         </div>
     </form>
 </div>
