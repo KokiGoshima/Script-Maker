@@ -29,7 +29,7 @@
       <div class="main">
         <div class="left">
 
-          <form action="{{ route('scripts.create', ['id' => 1]) }}" method="POST">
+          <form action="{{ route('scripts.create') }}" method="POST">
             @csrf
               <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
                 {{-- <button> --}}

@@ -26,7 +26,7 @@ Route::group(["middleware" => "auth"], function(){
 
 	Route::get("scripts/", "ScriptController@index")->name('scripts.index'); //ファイル一覧画面
 
-	Route::post("scripts/{param}/create", "ScriptController@store")->name('scripts.create'); //新規作成処理
+	Route::post("scripts/create", "ScriptController@store")->name('scripts.create'); //新規作成処理
 
 	Route::get("scripts/{param}/edit", "ScriptController@edit")->name('scripts.edit'); //編集画面
 

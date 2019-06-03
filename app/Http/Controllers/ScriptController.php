@@ -15,13 +15,13 @@ class ScriptController extends Controller
     	return view("scripts.index", ["scripts" => $scripts]);
     }
 
-    public function store($id){
+    public function store(){
         $script = new Script();
         $script->content = null;
         $script->user_id = Auth::user()->id;
         $script->save();
         // dd("storetest");
-    	return redirect()->route("scripts.edit", ['id' => $id]);
+    	return redirect()->route("scripts.edit", ['id' => $script->id]);
     }
 
     public function edit($id){
