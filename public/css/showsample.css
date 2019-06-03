@@ -66,12 +66,15 @@ body {
     position: relative;
     top: -1px;
     margin-top: 0;
+
     margin-bottom:50px;
+
     background-color: #fff;
     height: 500px;
   }
 
-.copy{
+
+..copy{
   text-align: right;
   margin-bottom: 10px;
 }

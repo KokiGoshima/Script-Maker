@@ -1,4 +1,4 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <title>Folder Library concept</title>
@@ -9,7 +9,7 @@
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="yourFiles.css"> <!-- 追加 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> <!-- 追加 -->
-</head> --}}
+</head> 
 {{-- <body> --}}
 @extends('layouts.test')
 
@@ -28,23 +28,26 @@
       <h1>Your Script</h1>
       <div class="main">
         <div class="left">
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="" target=”_blank”><i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script">New</p></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
 
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="{{ route('scripts.edit', ['id' => 1]) }}" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><a href="https://masakikono.work/5pisobreadHP/5pesobread.html" target=”_blank”><i class="fa far fa-file-alt
-          fa-file-alt-script" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></a></div>
-
+          <form action="{{ route('scripts.create', ['id' => 1]) }}" method="POST">
+            @csrf
+              <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+                {{-- <button> --}}
+                  <i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script"><span><button>New</button></span></p></i><i class="fa fa-check" aria-hidden="true"></i>
+                {{-- </button> --}}
+              </div>
+          </form>
+  
+          {{-- @foreach($scripts as $script) --}}
+          @foreach(Auth::user()->scripts as $script)
+            <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+              <a href="{{ route('scripts.edit', ['id' => 1]) }}">
+                <p>{{ $script->content }}</p>
+                <i class="fa far fa-file-alt fa-file-alt-script" aria-hidden="true"></i>
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </a>
+            </div>
+          @endforeach
 
         </div>
       </div>
@@ -76,5 +79,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script> <!-- 追加 -->
 @endsection
-{{-- </body>
-</html> --}}

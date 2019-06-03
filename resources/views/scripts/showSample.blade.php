@@ -32,6 +32,7 @@
 
   <div id="tab01" class="tab-contents">
     <h2>例 1</h2>
+
 			<div class="copy">
 				<button class="btn btn-outline-primary" onclick="copy1()"><i class="far fa-copy"></i>全文コピー</button>
 		　</div>
@@ -82,10 +83,38 @@
 </div>
 
 	
+=======
+    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................
+  </div>
+  <div id="tab02" class="tab-contents" value="Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service.....">
+    <h2>例 2</h2>
+    <p id="copyTarget">Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................</p>
+  </div>
+  <div id="tab03" class="tab-contents">
+    <h2>例 3</h2>
+    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................</p>
+  </div>
+  <div id="tab04" class="tab-contents">
+    <h2>例 4</h2>
+    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................</p>
+  </div>
+  <div id="tab05" class="tab-contents">
+    <h2>例 5</h2>
+    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
+    ....................................................................................</p>
+  </div>
+</div>
+
 
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{asset('/js/showsample.js')}}"></script>
+
 @endsection
+
