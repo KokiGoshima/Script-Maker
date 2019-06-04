@@ -14,7 +14,7 @@
 <div id="accordianmenu">
   <ul>
       <li class="active">
-          <p>導入</p>
+          <p>{{ $construct}}</p>
           <ul>
               <li><a class="topic current">挨拶</a></li>
               <li><a class="topic">自己紹介</a></li>
