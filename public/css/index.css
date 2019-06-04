@@ -68,6 +68,12 @@ h1{font-size:50px;margin-bottom:30px}
   color: gray;
 }
 
+
+
+.left{
+  width: 1010px;
+}
+
 .folder{
   /*border: solid;*/
   position: absolute;
