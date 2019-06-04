@@ -25,6 +25,7 @@ use App\Phrase;
       <li class="active">
           <p>導入</p>
           <ul>
+            {{-- @foreach(Construction::where('id', '=', 1)->situations() as $situation) --}}
             @foreach(Situation::where('flow_id', '=', 1)->get() as $situation)
               <li><a class="topic current">{{ $situation->pattern }}</a></li>
             @endforeach
