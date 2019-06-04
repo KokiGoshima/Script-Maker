@@ -1,4 +1,13 @@
+<?php
+
+use App\Construction;
+use App\Situation;
+use App\Phrase;
+
+?>
+
 @extends('layouts.test')
+
 
 @section('title')
   作成画面 | Script Maker
@@ -14,35 +23,27 @@
 <div id="accordianmenu">
   <ul>
       <li class="active">
-          <p>{{ $construct}}</p>
+          <p>導入</p>
           <ul>
-              <li><a class="topic current">挨拶</a></li>
-              <li><a class="topic">自己紹介</a></li>
-              <li><a class="topic">感謝</a></li>
-              <li><a class="topic">プレゼンテーマ</a></li>
-              <li><a class="topic">プレゼン時間・アウトライン</a></li>
-              <li><a class="topic">質疑応答について</a></li>
+            @foreach(Situation::where('flow_id', '=', 1)->get() as $situation)
+              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+            @endforeach
           </ul>
       </li>
       <li>
           <p>本論</p>
           <ul>
-              <li><a href="#">問題提起</a></li>
-              <li><a href="#">原因</a></li>
-              <li><a href="#">具体例</a></li>
-              <li><a href="#">図の紹介</a></li>
-              <li><a href="#">比較</a></li>
-              <li><a href="#">予想</a></li>
-              <li><a href="#">結果</a></li>
+            @foreach(Situation::where('flow_id', '=', 2)->get() as $situation)
+              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+            @endforeach
           </ul>
       </li>
       <li>
           <p>結論</p>
           <ul>
-              <li><a href="#">結論</a></li>
-              <li><a href="#">お礼</a></li>
-              <li><a href="#">質疑応答</a></li>
-              <li><a href="#">答え方</a></li>
+             @foreach(Situation::where('flow_id', '=', 3)->get() as $situation)
+              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+            @endforeach
           </ul>
       </li>
   </ul>
