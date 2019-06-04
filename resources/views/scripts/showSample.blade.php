@@ -78,7 +78,7 @@
 
 
 	<div  class="return-script">
-		<input value="Scriptへ戻る" onclick="history.back();" type="button">
+		<input value="&#xf2ea; 戻る" class="fas" onclick="history.back();" type="button" >
 	</div>
 
 
