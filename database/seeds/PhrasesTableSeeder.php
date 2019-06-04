@@ -32,8 +32,8 @@ class PhrasesTableSeeder extends Seeder
     	foreach ($phrases as $phrase) {
     		DB::table("phrases")->insert([
     			"japaneseSentence" => $phrase["japaneseSentence"],
-          "englishSentence" => $phrase["englishSentence"],
-          "pattern_id" => $phrase["pattern_id"],
+                "englishSentence" => $phrase["englishSentence"],
+                "pattern_id" => $phrase["pattern_id"],
     			"created_at" => Carbon::now(),
     			"updated_at" => Carbon::now()
     		]);
