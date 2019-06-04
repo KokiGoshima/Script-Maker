@@ -67,7 +67,7 @@ body {
     top: -1px;
     margin-top: 0;
 
-    margin-bottom:50px;
+    margin-bottom:20px;
 
     background-color: #fff;
     height: 500px;
@@ -77,5 +77,10 @@ body {
 .copy{
   text-align: right;
   margin-bottom: 10px;
+}
+
+.return-script{
+  text-align: center;
+  margin-bottom:50px;
 }
 

@@ -36,9 +36,7 @@
 			<div class="copy">
 				<button class="btn btn-outline-primary" onclick="copy1()"><i class="far fa-copy"></i>全文コピー</button>
 		　</div>
-	    <span id="example1">1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-	    ....................................................................................
-	  </span>
+	    <span id="example1">1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service
 	</div>
 
   <div id="tab02" class="tab-contents">
@@ -46,8 +44,7 @@
     <div class="copy">
 					<button class="btn btn-outline-primary" onclick="copy2()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <span id="example2">2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................
+    <span id="example2">2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service
   </span>
   </div>
 
@@ -56,8 +53,7 @@
     <div class="copy">
 				<button class="btn btn-outline-primary" onclick="copy3()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <span id="example3">3  Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................
+    <span id="example3">3  Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 3  Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 3  Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service
   </span>
   </div>
 
@@ -66,8 +62,7 @@
     <div class="copy">
 					<button class="btn btn-outline-primary" onclick="copy4()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <span id="example4">4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................
+    <span id="example4">4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service
   </span>
   </div>
 
@@ -76,39 +71,15 @@
     <div class="copy">
 					<button class="btn btn-outline-primary" onclick="copy5()"><i class="far fa-copy"></i>全文コピー</button>
 	　</div>
-    <span id="example5">5 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................
+    <span id="example5">5 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 5 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 5 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service
   </span>
   </div>
 </div>
 
-	
-=======
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................
-  </div>
-  <div id="tab02" class="tab-contents" value="Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service.....">
-    <h2>例 2</h2>
-    <p id="copyTarget">Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
-  </div>
-  <div id="tab03" class="tab-contents">
-    <h2>例 3</h2>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
-  </div>
-  <div id="tab04" class="tab-contents">
-    <h2>例 4</h2>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
-  </div>
-  <div id="tab05" class="tab-contents">
-    <h2>例 5</h2>
-    <p>Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service................................................................................................<br>
-    ....................................................................................</p>
-  </div>
-</div>
 
+	<div  class="return-script">
+		<input value="Scriptへ戻る" onclick="history.back();" type="button">
+	</div>
 
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
