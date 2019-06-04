@@ -29,7 +29,6 @@ $(function() {
   });
 });
 
-
 function copy1(){
   //範囲を指定
   let range = document.createRange();
@@ -110,4 +109,3 @@ function copy5(){
   document.execCommand('copy');
   alert('コピーしました');
 }
-
