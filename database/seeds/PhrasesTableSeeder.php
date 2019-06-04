@@ -23,7 +23,7 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 1
             ],
             [
-                "japaneseSentence" => "「イベントの名前」にようこそ",
+                "japaneseSentence" => "「イベントの名前」にようこそ。",
                 "englishSentence" => "Welcome to [name of event].",
                 "pattern_id" => 1
             ],
@@ -44,7 +44,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "お越しいただきありがとうございます。",
-                "englishSentence" => "Thank you all for coming today",
+                "englishSentence" => "Thank you all for coming today.",
                 "pattern_id" => 1
             ],
             [
@@ -53,7 +53,7 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 1
             ],
             [
-                "japaneseSentence" => "それでは始めましょう",
+                "japaneseSentence" => "それでは始めましょう。",
                 "englishSentence" => "Now let's begin.",
                 "pattern_id" => 1
             ],
@@ -100,7 +100,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "***として○年間勤めております。",
-                "englishSentence" => "I have been working as a ... for ... years",
+                "englishSentence" => "I have been working as a ... for ... years.",
                 "pattern_id" => 2
             ],
             // ---------------------------------------------------
@@ -111,7 +111,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             // ---------------------------------------------------
             [
-                "japaneseSentence" => "まずいくつかの背景から紹介させてください",
+                "japaneseSentence" => "まずいくつかの背景から紹介させてください。",
                 "englishSentence" => "Let me start by giving you some background information.",
                 "pattern_id" => 4
             ],
@@ -122,27 +122,27 @@ class PhrasesTableSeeder extends Seeder
             ],
             // ---------------------------------------------------
             [
-                "japaneseSentence" => "今日は..について話します",
+                "japaneseSentence" => "今日は..について話します。",
                 "englishSentence" => "Today I am here to talk to you about…",
                 "pattern_id" => 5
             ],
             [
-                "japaneseSentence" => "As you all know, today I am going to talk to you about…",
-                "englishSentence" => "皆さんも知っての通り、..について話します",
+                "japaneseSentence" => "皆さんも知っての通り、..について話します",
+                "englishSentence" => "As you all know, today I am going to talk to you about…",
                 "pattern_id" => 5
             ],
             [
-                "japaneseSentence" => "この場を借りて...について話したいと思います",
+                "japaneseSentence" => "この場を借りて...について話したいと思います。",
                 "englishSentence" => "I would like to take this opportunity to talk to you about…",
                 "pattern_id" => 5
             ],
             [
-                "japaneseSentence" => "I am delighted to be here today to tell you about…",
-                "englishSentence" => "...について今日お話しすることができて嬉しいです",
+                "japaneseSentence" => "...について今日お話しすることができて嬉しいです",
+                "englishSentence" => "I am delighted to be here today to tell you about…",
                 "pattern_id" => 5
             ],
             [
-                "japaneseSentence" => "今日は...についてお話ししたいと思います",
+                "japaneseSentence" => "今日は...についてお話ししたいと思います。",
                 "englishSentence" => "Today I would like to outline…",
                 "pattern_id" => 5
             ],
@@ -157,12 +157,12 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 5
             ],
             [
-                "japaneseSentence" => "このプレゼンテーションの目的は...です",
+                "japaneseSentence" => "このプレゼンテーションの目的は...です。",
                 "englishSentence" => "The purpose of this presentation is…",
                 "pattern_id" => 5
             ],
             [
-                "japaneseSentence" => "今日の私の目的は...です",
+                "japaneseSentence" => "今日の私の目的は...です。",
                 "englishSentence" => "My objective today is…",
                 "pattern_id" => 5
             ],
@@ -192,7 +192,7 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 5
             ],
             [
-                "japaneseSentence" => "まずは本日のプレゼンテーションの概要を説明いたします",
+                "japaneseSentence" => "まずは本日のプレゼンテーションの概要を説明いたします。",
                 "englishSentence" => "I'd briefly like to take you through today's presentation.",
                 "pattern_id" => 5
             ],
@@ -208,12 +208,12 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 6
             ],
             [
-                "japaneseSentence" => "まずはじめに..について話したいと思います",
+                "japaneseSentence" => "まずはじめに..について話したいと思います。",
                 "englishSentence" => "Firstly I will talk about…",
                 "pattern_id" => 6
             ],
             [
-                "japaneseSentence" => "まず..から始めたいと思います",
+                "japaneseSentence" => "まず..から始めたいと思います。",
                 "englishSentence" => "I’ll begin with..",
                 "pattern_id" => 6
             ],
@@ -233,7 +233,7 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 6
             ],
             [
-                "japaneseSentence" => "4つの主なパートがあります",
+                "japaneseSentence" => "4つの主なパートがあります。",
                 "englishSentence" => "I have four main points…",
                 "pattern_id" => 6
             ],
@@ -275,7 +275,7 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 8
             ],
             [
-                "japaneseSentence" => "質問がある場合はプレゼン中でも構いません",
+                "japaneseSentence" => "質問がある場合はプレゼン中でも構いません。",
                 "englishSentence" => "Please interrupt if you have any questions.",
                 "pattern_id" => 8
             ],
@@ -326,8 +326,8 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 9
             ],
             [
-                "japaneseSentence" => "Please pay attention to this line graph. This shows the change of the number of respondents to the questionnaire.",
-                "englishSentence" => "この折れ線グラフを見てください。アンケートの回答者の推移をあわしています。",
+                "japaneseSentence" => "この折れ線グラフを見てください。アンケートの回答者の推移をあわしています。",
+                "englishSentence" => "Please pay attention to this line graph. This shows the change of the number of respondents to the questionnaire.",
                 "pattern_id" => 9
             ],
             [
@@ -341,12 +341,12 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 9
             ],
             [
-                "japaneseSentence" => "この表（グラフ）を見てください",
+                "japaneseSentence" => "この表（グラフ）を見てください。",
                 "englishSentence" => "Please look at this pie chart（graph）.",
                 "pattern_id" => 9
             ],
             [
-                "japaneseSentence" => "それでは、次の円グラフへ移りましょう",
+                "japaneseSentence" => "それでは、次の円グラフへ移りましょう。",
                 "englishSentence" => "Now let's go on to the next chart.",
                 "pattern_id" => 9
             ],
@@ -366,8 +366,8 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 9
             ],
             [
-                "japaneseSentence" => "Let me use a graphic to explain this.",
-                "englishSentence" => "これを説明するためにグラフを使います。",
+                "japaneseSentence" => "これを説明するためにグラフを使います。",
+                "englishSentence" => "Let me use a graphic to explain this.",
                 "pattern_id" => 9
             ],
             [
@@ -382,23 +382,23 @@ class PhrasesTableSeeder extends Seeder
             ],
 // ------------------------------------------------------------------------------------------------------------------------------
             [
-                "japaneseSentence" => "次の具体例を見てみましょう",
+                "japaneseSentence" => "次の具体例を見てみましょう。",
                 "englishSentence" => "Let's take a look at the following concrete example.",
                 "pattern_id" => 10
             ],
             [
-                "japaneseSentence" => "私の意見を裏付ける例です",
+                "japaneseSentence" => "私の意見を裏付ける例です。",
                 "englishSentence" => "This case supports my opinion.",
                 "pattern_id" => 10
             ],
             [
-                "japaneseSentence" => "このような事例は多く見受けられます",
+                "japaneseSentence" => "このような事例は多く見受けられます。",
                 "englishSentence" => "We can see cases like this quite a few times.",
                 "pattern_id" => 10
             ],
             [
-                "japaneseSentence" => "Over the past few years it has decreased very rapidly.",
-                "englishSentence" => "過去数年間で、急速に減少しています。",
+                "japaneseSentence" => "過去数年間で、急速に減少しています。",
+                "englishSentence" => "Over the past few years it has decreased very rapidly.",
                 "pattern_id" => 10
             ],
             [
@@ -438,7 +438,7 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 11
             ],
             [
-                "japaneseSentence" => "...についてみていこうと思います",
+                "japaneseSentence" => "...についてみていこうと思います。",
                 "englishSentence" => "I’d now like to look at ...",
                 "pattern_id" => 11
             ],
@@ -448,12 +448,12 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 11
             ],
             [
-                "japaneseSentence" => "次の要点に移ります。それは...です",
+                "japaneseSentence" => "次の要点に移ります。それは...です。",
                 "englishSentence" => "I’ll now move on to my next point which is…",
                 "pattern_id" => 11
             ],
             [
-                "japaneseSentence" => "次の要点に移ります。それは...です",
+                "japaneseSentence" => "次の要点に移ります。それは...です。",
                 "englishSentence" => "So now we come to the next point, which is…",
                 "pattern_id" => 11
             ],
@@ -601,12 +601,12 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 19
             ],
             [
-                "japaneseSentence" => "Aの結果から、Bが起こることが予見されます",
+                "japaneseSentence" => "Aの結果から、Bが起こることが予見されます。",
                 "englishSentence" => "From A, it follows that we are going to have to expect B.",
                 "pattern_id" => 19
             ],
             [
-                "japaneseSentence" => "Aの結果から、Bが起こることが予見されます",
+                "japaneseSentence" => "Aの結果から、Bが起こることが予見されます。",
                 "englishSentence" => "We must anticipate that B will be following on from A.",
                 "pattern_id" => 19
             ],
@@ -663,7 +663,7 @@ class PhrasesTableSeeder extends Seeder
                 "pattern_id" => 21
             ],
             [
-                "japaneseSentence" => "結論として、… を言うことを指摘したいと思います",
+                "japaneseSentence" => "結論として、… を言うことを指摘したいと思います。",
                 "englishSentence" => "To conclude, I’d (I would) like to say that …",
                 "pattern_id" => 21
             ],
