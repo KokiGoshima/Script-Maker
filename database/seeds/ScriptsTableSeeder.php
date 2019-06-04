@@ -30,7 +30,7 @@ class ScriptsTableSeeder extends Seeder
     	foreach ($scripts as $script) {
     		DB::table("scripts")->insert([
     			"content" => $script["content"],
-          "user_id" => $user->id,
+                "user_id" => $user->id,
     			"created_at" => Carbon::now(),
     			"updated_at" => Carbon::now()
     		]);
