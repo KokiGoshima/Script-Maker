@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Script;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\CreateScript;
+use App\Construction;
+use App\Situation;
+use App\Phrase;
 
 class ScriptController extends Controller
 {
@@ -25,9 +28,14 @@ class ScriptController extends Controller
     }
 
     public function edit($id){
+        // $construction = Construction::find(3);
+        // $situations = Situation::all();
+        // $phrases = Phrase::all();
+        // dd(Construction::find(1)->situations);
         $script = Script::find($id);
         // dd($script);
-    	return view("scripts.edit", ["script" => $script]);
+    	// return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
+        return view("scripts.edit", ["script" => $script]);
     }
 
     public function update($id, CreateScript $request){

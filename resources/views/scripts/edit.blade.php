@@ -1,4 +1,13 @@
+<?php
+
+use App\Construction;
+use App\Situation;
+use App\Phrase;
+
+?>
+
 @extends('layouts.test')
+
 
 @section('title')
   作成画面 | Script Maker
@@ -9,44 +18,41 @@
 @endsection
 
 @section('content')
-{{--  アコーディオン機能 --}}
-<div class="script-box">
-    <div id="accordianmenu">
-        <ul>
-            <li class="active">
-                <p>導入</p>
-                <ul>
-                    <li><a class="topic current" href="#">挨拶</a></li>
-                    <li><a class="topic" href="#">自己紹介</a></li>
-                    <li><a class="topic" href="#">感謝</a></li>
-                    <li><a class="topic" href="#">プレゼンテーマ</a></li>
-                    <li><a class="topic" href="#">プレゼン時間</a></li>
-                    <li><a class="topic" href="#">質疑応答</a></li>
-                </ul>
-            </li>
-            <li>
-                <p>本論</p>
-                <ul>
-                    <li><a class="topic" href="#">問題提起</a></li>
-                    <li><a class="topic" href="#">原因</a></li>
-                    <li><a class="topic" href="#">具体例</a></li>
-                    <li><a class="topic" href="#">図の紹介</a></li>
-                    <li><a class="topic" href="#">比較</a></li>
-                    <li><a class="topic" href="#">予想</a></li>
-                    <li><a class="topic" href="#">結果</a></li>
-                </ul>
-            </li>
-            <li>
-                <p>結論</p>
-                <ul>
-                    <li><a class="topic" href="#">結論</a></li>
-                    <li><a class="topic" href="#">お礼</a></li>
-                    <li><a class="topic" href="#">質疑応答</a></li>
-                    <li><a class="topic" href="#">答え方</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+
+<body>
+<div class="box clearfix">
+<div id="accordianmenu">
+  <ul>
+      <li class="active">
+          <p>導入</p>
+          <ul>
+            @foreach(Construction::find(1)->situations as $situation)
+            {{-- @foreach(Situation::where('flow_id', '=', 1)->get() as $situation) --}}
+              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+            @endforeach
+          </ul>
+      </li>
+      <li>
+          <p>本論</p>
+          <ul>
+            @foreach(Construction::find(2)->situations as $situation)
+              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+            @endforeach
+          </ul>
+      </li>
+      <li>
+          <p>結論</p>
+          <ul>
+             @foreach(Construction::find(3)->situations as $situation)
+              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+            @endforeach
+          </ul>
+      </li>
+  </ul>
+</div>
+
+
+
 
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
