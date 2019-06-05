@@ -25,8 +25,8 @@ use App\Phrase;
       <li class="active">
           <p>導入</p>
           <ul>
-            {{-- @foreach(Construction::where('id', '=', 1)->situations() as $situation) --}}
-            @foreach(Situation::where('flow_id', '=', 1)->get() as $situation)
+            @foreach(Construction::find(1)->situations as $situation)
+            {{-- @foreach(Situation::where('flow_id', '=', 1)->get() as $situation) --}}
               <li><a class="topic current">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
@@ -34,7 +34,7 @@ use App\Phrase;
       <li>
           <p>本論</p>
           <ul>
-            @foreach(Situation::where('flow_id', '=', 2)->get() as $situation)
+            @foreach(Construction::find(2)->situations as $situation)
               <li><a class="topic current">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
@@ -42,7 +42,7 @@ use App\Phrase;
       <li>
           <p>結論</p>
           <ul>
-             @foreach(Situation::where('flow_id', '=', 3)->get() as $situation)
+             @foreach(Construction::find(3)->situations as $situation)
               <li><a class="topic current">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
