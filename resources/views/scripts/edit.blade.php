@@ -20,7 +20,8 @@ use App\Phrase;
 @section('content')
 
 <body>
-<div class="box clearfix">
+{{--  アコーディオン機能 --}}
+{{-- <div class="editwrapper"> --}}
 <div id="accordianmenu">
   <ul>
       <li class="active">
@@ -50,6 +51,7 @@ use App\Phrase;
       </li>
   </ul>
 </div>
+
 
 
 
@@ -130,26 +132,22 @@ use App\Phrase;
     </div>
   </div>
 
+  <div class="script">
+      <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
+          @csrf
+          @method("put")
+          <div>
+              <p class="stytle">スクリプト</p>
+                  <div class="button-box">
+                      <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
+                      <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
+                  </div>
+                  <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
+          </div>
+      </form>
+  </div>
+{{-- </div> --}}
 
-
-<div class="clearfix">
-    <div class="script">
-        <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
-            @csrf
-            @method("put")
-            <div class="script1">
-                <p class="script-item">スクリプト</p>
-                    <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
-                    <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
-                    <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
-            </div>
-        </form>
-    </div>
-
-
- 
-     
-</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
