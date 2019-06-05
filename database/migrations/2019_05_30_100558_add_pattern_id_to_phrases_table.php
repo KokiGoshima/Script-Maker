@@ -14,7 +14,7 @@ class AddPatternIdToPhrasesTable extends Migration
     public function up()
     {
         Schema::table('phrases', function (Blueprint $table) {
-            $table->integer('pattern_id');
+            $table->integer('situation_id');
         });
     }
 
