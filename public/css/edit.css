@@ -143,8 +143,3 @@ body {
     background-attachment: local;
   }
   
-  .clearfix::after{
-    content : "";
-    display : block;
-    clear : both;
-  }

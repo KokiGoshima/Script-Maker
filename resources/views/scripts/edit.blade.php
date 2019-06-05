@@ -10,7 +10,7 @@
 
 @section('content')
 {{--  アコーディオン機能 --}}
-<div class="script-box">
+<div class="edit-wrapper">
     <div id="accordianmenu">
         <ul>
             <li class="active">
@@ -126,23 +126,19 @@
 
 
 
-<div class="clearfix">
-    <div class="script">
-        <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
-            @csrf
-            @method("put")
-            <div class="script1">
-                <p class="script-item">スクリプト</p>
-                    <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
-                    <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
-                    <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
-            </div>
-        </form>
-    </div>
 
-
- 
-     
+  <div class="script">
+      <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
+          @csrf
+          @method("put")
+          <div class="script1">
+              <p class="script-item">スクリプト</p>
+                  <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
+                  <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
+                  <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
+          </div>
+      </form>
+  </div>
 </div>
 
 
