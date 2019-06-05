@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Situation extends Model
 {
-    public function Construction(){
+    public function construction(){
         return $this->belongsTo("App\Construction");
     }
 

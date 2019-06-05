@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Phrase extends Model
 {
-     public function Situation(){
+     public function situation(){
         return $this->belongsTo("App\Situation");
     }
 }
