@@ -34,6 +34,6 @@ Route::group(["middleware" => "auth"], function(){
 
 	Route::get("scripts/sample", "ScriptController@showSample")->name('scripts.sample'); //サンプル画面
 
-	Route::delete("scripts/{param}/delete", 'ScriptController@destroy')->name('scripts.delete');
+	Route::delete("scripts/{param}/delete", 'ScriptController@destroy')->name('scripts.delete'); //スクリプト削除機能
 
 });

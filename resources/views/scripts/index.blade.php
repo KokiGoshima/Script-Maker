@@ -37,7 +37,7 @@
                 {{-- </button> --}}
               </div>
           </form>
-  
+
           {{-- @foreach($scripts as $script) --}}
           @foreach(Auth::user()->scripts as $script)
             <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
@@ -46,32 +46,21 @@
                 <i class="fa far fa-file-alt fa-file-alt-script" aria-hidden="true"></i>
                 <i class="fa fa-check" aria-hidden="true"></i>
               </a>
-            </div>
+
+                  {{--削除ボタンを設ける--}}
+              <form action="{{route('scripts.delete',['id' => $script->id]) }}" method="POST" class="d-inline">
+
+                @csrf
+                @method('delete')
+                <button class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
+              {{-- outlineって入れると、白抜き、カーソル合わせたら色変わるようになる --}}
+              </form>
+             </div>
           @endforeach
+     </div>
+   </div>
 
-        </div>
-      </div>
 
-      <div class="top-droppable folder-content easeout2 closed" id="folder1-content">
-        <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 1</span></h2>
-      </div>
-      <div class="top-droppable folder-content easeout2 closed" id="folder2-content">
-        <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 2</span></h2>
-      </div>
-      <div class="top-droppable folder-content easeout2 closed" id="folder3-content">
-        <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 3</span></h2>
-      </div>
-      <div class="top-droppable folder-content easeout2 closed" id="folder4-content">
-        <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 4</span></h2>
-      </div>
-      <div class="top-droppable folder-content easeout2 closed" id="folder5-content">
-        <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 5</span></h2>
-      </div>
 
     </div>
   </section>
