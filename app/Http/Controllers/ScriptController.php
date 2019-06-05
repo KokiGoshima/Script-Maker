@@ -49,7 +49,10 @@ class ScriptController extends Controller
     	return view("scripts.showSample");
     }
 
-    public function destroy(){
-    	
+    public function destroy($id){
+        // dd($id);
+    	$script = Script::find($id);
+        $script->delete();
+        return redirect()->route("scripts.index");
     }
 }
