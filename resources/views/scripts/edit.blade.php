@@ -57,77 +57,106 @@ use App\Phrase;
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
     <!-- 挨拶 -->
-    <div class="scrollvar topic_item current">
-        <p class="situations">導入 > 挨拶</p>
-        <div class="phrase">
-          <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
-                  こんにちは、今日は私のトピックについて説明します</button>
-          </div>
-        </div>
-        <div class="phrase">
-          <div class="phrase-item">
+    {{-- @forelse() --}}
+      <div class="scrollvar topic_item current">
+
+          <p class="situations">{{Construction::find(1)->flow}} > {{Situation::find(1)->pattern}}</p>
+
+          <div class="phrase">
+            <div class="phrase-item">
                   <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
                     こんにちは、今日は私のトピックについて説明します</button>
+            </div>
           </div>
-        </div>
-        <div class="phrase">
-          <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
-                  こんにちは、今日は私のトピックについて説明します</button>
+
+          <div class="phrase">
+            <div class="phrase-item">
+                    <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
+                      こんにちは、今日は私のトピックについて説明します</button>
+            </div>
           </div>
-        </div>
-    </div>
+
+          <div class="phrase">
+            <div class="phrase-item">
+                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
+                    こんにちは、今日は私のトピックについて説明します</button>
+            </div>
+          </div>
+
+      </div>
+    {{-- @endforelse --}}
     <!-- 自己紹介 -->
-    <div class="scrollvar topic_item">
+    {{-- <div class="scrollvar topic_item">
+
         <p class="situations">導入 > 自己紹介</p>
+
         <div class="phrase">
             <div class="phrase-item">
                 <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="My name is naoki.  ">My name is naoki.<br>
                   わたしの名前は直樹です。</button>
             </div>
         </div>
+
     </div>
     <!-- 感謝 -->
     <div class="scrollvar topic_item">
+
         <p class="situations">導入 > 感謝</p>
+
         <div class="phrase">
             <div class="phrase-item">
                 <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
                   今日はお越し頂きありがとうございます。</button>
             </div>
         </div>
-    </div>
+
+    </div> --}}
     <!-- プレゼンテーマ -->
-    <div class="scrollvar topic_item">
+    {{-- <div class="scrollvar topic_item">
+
       <p class="situations">導入 > プレゼンテーマ</p>
+
       <div class="phrase">
+
           <div class="phrase-item">
                 <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
                 今日はお越し頂きありがとうございます。</button>
           </div>
+
       </div>
-    </div>
+
+    </div> --}}
     <!-- プレゼン時間 -->
-    <div class="scrollvar topic_item">
+    {{-- <div class="scrollvar topic_item">
+
         <p class="situations">導入 > プレゼン時間</p>
+
         <div class="phrase">
+
             <div class="phrase-item">
                 <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
                   今日はお越し頂きありがとうございます。</button>
             </div>
+
         </div>
-    </div>
+
+    </div> --}}
     <!-- 質疑応答 -->
-    <div class="scrollvar topic_item">
+ {{--    <div class="scrollvar topic_item">
+
         <p class="situations">導入 > 質疑応答</p>
+
         <div class="phrase">
+
             <div class="phrase-item">
                 <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
                   今日はお越し頂きありがとうございます。</button>
             </div>
+
         </div>
-    </div>
+
+    </div> --}}
+
   </div>
 
 
