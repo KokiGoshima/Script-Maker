@@ -104,8 +104,9 @@
         @method("put")
         <div class="script1">
             <p class="script-item">スクリプト</p>
-                <textarea id="text1" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
-                <input type="reset" value="クリア" onclick="return confirm('クリアボタンがクリックされました。本当に入力内容を削除してもよろしいですか？');">
+                <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
+               {{--  <input type="reset" class="jquery_reset_perfect" value="クリア" onclick="return confirm('クリアボタンがクリックされました。本当に入力内容を削除してもよろしいですか？');"> --}}
+               <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
                 <input type="submit" value="保存(ダミー)" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
         </div>
      </form>
@@ -160,5 +161,22 @@ let after = sentence.substr(pos, len);
 return document.scriptForm.textbox.value = before + str + after;
 }
 </script>
+
+<script>
+  //完全リセット
+$('.jquery_reset_perfect').on('click', function(){
+  // 「OK」ボタン押下時
+  if (confirm('実行しますか？')) {
+    $('.scripttext').val('');
+   // 「キャンセル」ボタン押下時
+   } else {
+        alert('キャンセル');
+    }
+});
+</script>
+
+
+
+
 </body>
 @endsection
