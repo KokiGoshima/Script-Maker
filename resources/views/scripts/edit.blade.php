@@ -10,7 +10,7 @@
 
 @section('content')
 {{--  アコーディオン機能 --}}
-
+<div class="edit-wrapper">
     <div id="accordianmenu">
         <ul>
             <li class="active">
