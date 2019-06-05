@@ -112,7 +112,9 @@ h1{font-size:50px;margin-bottom:30px}
   border-color: transparent;
 }
 
-
+.main div {
+    display: none;
+}
 
 
 
