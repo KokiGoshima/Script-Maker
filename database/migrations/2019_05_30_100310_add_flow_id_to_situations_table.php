@@ -14,7 +14,7 @@ class AddFlowIdToSituationsTable extends Migration
     public function up()
     {
         Schema::table('situations', function (Blueprint $table) {
-            $table->integer('flow_id');
+            $table->integer('construction_id');
         });
     }
 

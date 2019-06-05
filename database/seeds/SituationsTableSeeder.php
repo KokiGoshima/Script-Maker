@@ -29,7 +29,7 @@ class SituationsTableSeeder extends Seeder
     	foreach ($situations as $situation) {
     		DB::table("situations")->insert([
     			"pattern" => $situation["pattern"],
-          "flow_id" => $situation["flow_id"],
+                "flow_id" => $situation["flow_id"],
     			"created_at" => Carbon::now(),
     			"updated_at" => Carbon::now()
     		]);
