@@ -29,7 +29,7 @@ use App\Phrase;
           <ul>
             @foreach(Construction::find(1)->situations as $situation)
             {{-- @foreach(Situation::where('flow_id', '=', 1)->get() as $situation) --}}
-              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+              <li><a class="topic">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
       </li>
@@ -37,7 +37,7 @@ use App\Phrase;
           <p>本論</p>
           <ul>
             @foreach(Construction::find(2)->situations as $situation)
-              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+              <li><a class="topic">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
       </li>
@@ -45,7 +45,7 @@ use App\Phrase;
           <p>結論</p>
           <ul>
              @foreach(Construction::find(3)->situations as $situation)
-              <li><a class="topic current">{{ $situation->pattern }}</a></li>
+              <li><a class="topic">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
       </li>
@@ -59,10 +59,10 @@ use App\Phrase;
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
     <!-- 挨拶 -->
-    {{-- @forelse() --}}
+    @foreach(Construction::all() as $construction)
       <div class="scrollvar topic_item current">
 
-          <p class="situations">{{Construction::find(1)->flow}} > {{Situation::find(1)->pattern}}</p>
+          <p class="situations">{{$construction->flow}} > {{$situation->pattern}}</p>
 
           <div class="phrase">
             <div class="phrase-item">
@@ -86,7 +86,7 @@ use App\Phrase;
           </div>
 
       </div>
-    {{-- @endforelse --}}
+    @endforeach
     <!-- 自己紹介 -->
     {{-- <div class="scrollvar topic_item">
 
