@@ -18,6 +18,7 @@ use App\Phrase;
 @endsection
 
 @section('content')
+
 <body>
 <div class="box clearfix">
 <div id="accordianmenu">
@@ -51,66 +52,103 @@ use App\Phrase;
 </div>
 
 
-<div id="phrases">
-  <!-- 挨拶 -->
-  <div class="scrollvar topic_item current">
-      <p class="tytle">導入 > 挨拶</p>
-      <div class="well">
-          <div>
-              <p>Hello</p><br>
-              <p>こんにちは</p>
-          </div>
-          <div>
-              <input type="button" value="挿入">
-          </div>
-      </div>
-  </div>
-  <!-- 自己紹介 -->
-  <div class="scrollvar topic_item">
-      <p class="tytle">導入 > 自己紹介</p>
-      <div class="well">
-          <div>
-              <p>My name is naoki</p><br>
-              <p>わたしの名前は直樹です。</p>
-          </div>
-          <div>
-              <input type="button" value="挿入">
-          </div>
-      </div>
-  </div>
-  <!-- 感謝 -->
-  <div class="scrollvar topic_item">
-      <p class="tytle">導入 > 感謝</p>
-      <div class="well">
-          <div>
-              <p>Thank you for coming my presentation.</p><br>
-              <p>今日はお越し頂きありがとうございます。</p>
-          </div>
-          <div>
-              <input type="button" value="挿入">
-          </div>
-      </div>
-  </div>
-</div>
 
 
-<div class="script">
-     <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
-        {{-- <div class="textcontents">
-            <input type="button" value="Thank you for coming my presentetion. " onClick="addTF(this.value)"><br>
-            <input type="button" value="My name is naoki. " onClick="addTF(this.value)"><br>
-            <input type="button" value="Today, I would like to explain three topic. " onClick="addTF(this.value)"><br>
-            <input type="button" value="Please give comennt after my presentation. " onClick="addTF(this.value)"><br>
-        </div> --}}
-        @csrf
-        @method("put")
-        <div class="script1">
-            <p class="script-item">スクリプト</p>
-                <textarea id="text1" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
-                <input type="reset" value="クリア" onclick="return confirm('クリアボタンがクリックされました。本当に入力内容を削除してもよろしいですか？');">
-                <input type="submit" value="保存(ダミー)" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
+  {{-- フレーズ画面 --}}
+  <div id="phrases-box">
+    <!-- 挨拶 -->
+    <div class="scrollvar topic_item current">
+        <p class="situations">導入 > 挨拶</p>
+        <div class="phrase">
+          <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
+                  こんにちは、今日は私のトピックについて説明します</button>
+          </div>
         </div>
-     </form>
+        <div class="phrase">
+          <div class="phrase-item">
+                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
+                    こんにちは、今日は私のトピックについて説明します</button>
+          </div>
+        </div>
+        <div class="phrase">
+          <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
+                  こんにちは、今日は私のトピックについて説明します</button>
+          </div>
+        </div>
+    </div>
+    <!-- 自己紹介 -->
+    <div class="scrollvar topic_item">
+        <p class="situations">導入 > 自己紹介</p>
+        <div class="phrase">
+            <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="My name is naoki.  ">My name is naoki.<br>
+                  わたしの名前は直樹です。</button>
+            </div>
+        </div>
+    </div>
+    <!-- 感謝 -->
+    <div class="scrollvar topic_item">
+        <p class="situations">導入 > 感謝</p>
+        <div class="phrase">
+            <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
+                  今日はお越し頂きありがとうございます。</button>
+            </div>
+        </div>
+    </div>
+    <!-- プレゼンテーマ -->
+    <div class="scrollvar topic_item">
+      <p class="situations">導入 > プレゼンテーマ</p>
+      <div class="phrase">
+          <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
+                今日はお越し頂きありがとうございます。</button>
+          </div>
+      </div>
+    </div>
+    <!-- プレゼン時間 -->
+    <div class="scrollvar topic_item">
+        <p class="situations">導入 > プレゼン時間</p>
+        <div class="phrase">
+            <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
+                  今日はお越し頂きありがとうございます。</button>
+            </div>
+        </div>
+    </div>
+    <!-- 質疑応答 -->
+    <div class="scrollvar topic_item">
+        <p class="situations">導入 > 質疑応答</p>
+        <div class="phrase">
+            <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
+                  今日はお越し頂きありがとうございます。</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="clearfix">
+    <div class="script">
+        <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
+            @csrf
+            @method("put")
+            <div class="script1">
+                <p class="script-item">スクリプト</p>
+                    <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
+                    <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
+                    <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
+            </div>
+        </form>
+    </div>
+
+
+ 
+     
 </div>
 
 
@@ -119,6 +157,7 @@ use App\Phrase;
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+{{-- アコーディオン --}}
 <script>
 $(document).ready(function(){
   $("#accordianmenu p").click(function(){
@@ -130,6 +169,7 @@ $(document).ready(function(){
 });
 </script>
 
+{{-- コンテンツの表示 --}}
 <script>
         $('.topic').on('click', function(){
           // 初期化
@@ -143,7 +183,7 @@ $(document).ready(function(){
         })
 </script>
 
-
+{{-- テキストエリア --}}
 <script type="text/javascript">
 function addTF(str) {
 //テキストエリア取得
@@ -162,5 +202,22 @@ let after = sentence.substr(pos, len);
 return document.scriptForm.textbox.value = before + str + after;
 }
 </script>
-</body>
+
+
+<script>
+  //完全リセット
+$('.jquery_reset_perfect').on('click', function(){
+  // 「OK」ボタン押下時
+  if (confirm('実行しますか？')) {
+    $('.scripttext').val('');
+   // 「キャンセル」ボタン押下時
+   } else {
+        alert('キャンセル');
+    }
+});
+</script>
+
+
+
+
 @endsection
