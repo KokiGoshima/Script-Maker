@@ -10,7 +10,7 @@
 
 @section('content')
 {{--  アコーディオン機能 --}}
-<div class="edit-wrapper">
+{{-- <div class="editwrapper"> --}}
     <div id="accordianmenu">
         <ul>
             <li class="active">
@@ -128,15 +128,17 @@
       <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
           @csrf
           @method("put")
-          <div class="script1">
-              <p class="script-item">スクリプト</p>
-                  <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力">{{ old('content', $script->content) }}</textarea><br>
-                  <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
-                  <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
+          <div>
+              <p class="stytle">スクリプト</p>
+                  <div class="button-box">
+                      <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
+                      <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
+                  </div>
+                  <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
           </div>
       </form>
   </div>
-
+{{-- </div> --}}
 
 
 
