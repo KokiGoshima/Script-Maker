@@ -10,7 +10,7 @@
 
 @section('content')
 {{--  アコーディオン機能 --}}
-<div class="edit-wrapper">
+
     <div id="accordianmenu">
         <ul>
             <li class="active">
@@ -124,9 +124,6 @@
     </div>
   </div>
 
-
-
-
   <div class="script">
       <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
           @csrf
@@ -139,7 +136,8 @@
           </div>
       </form>
   </div>
-</div>
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
