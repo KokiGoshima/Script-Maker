@@ -1,5 +1,9 @@
 @extends('layouts.test')
 
+@section('title')
+  登録画面 | Script Maker
+@endsection
+
 @section('content')
 <div class="container mt-5">
     <div class="row justify-content-center">
