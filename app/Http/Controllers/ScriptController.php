@@ -31,7 +31,7 @@ class ScriptController extends Controller
         // $construction = Construction::find(3);
         // $situations = Situation::all();
         // $phrases = Phrase::all();
-        // dd(Construction::find(1)->situations);
+        // dd(Construction::find(1)->flow);
         $script = Script::find($id);
         // dd($script);
     	// return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
