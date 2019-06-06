@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+body {
+    font-family: arial;
+    background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;background-size:cover;font-weight:400;min-height:100vh
+}
