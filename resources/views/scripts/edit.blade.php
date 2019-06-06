@@ -77,13 +77,15 @@ use App\Phrase;
       <div class="scrollvar topic_item current">
 
           <p class="situations">{{ Construction::find($i)->flow }} > {{ Situation::find($j)->pattern }}</p>
-
+  
+        @for()
           <div class="phrase">
             <div class="phrase-item">
-                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
+                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{}}">Hello I would like to explain about my topic.<br>
                     こんにちは、今日は私のトピックについて説明します</button>
             </div>
           </div>
+        @endfor
 
           {{-- <div class="phrase">
             <div class="phrase-item">
