@@ -78,14 +78,14 @@ use App\Phrase;
 
           <p class="situations">{{ Construction::find($i)->flow }} > {{ Situation::find($j)->pattern }}</p>
   
-        @for()
+        @foreach(Situation::find($j)->phrases as $phrase)
           <div class="phrase">
             <div class="phrase-item">
-                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{}}">Hello I would like to explain about my topic.<br>
-                    こんにちは、今日は私のトピックについて説明します</button>
+                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
+                    {{ $phrase->japaneseSentence }}</button>
             </div>
           </div>
-        @endfor
+        @endforeach
 
           {{-- <div class="phrase">
             <div class="phrase-item">
