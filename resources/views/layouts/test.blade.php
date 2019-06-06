@@ -46,15 +46,15 @@
         <a href="{{ url('/scripts') }}">Script Maker</a>
         </div>
         <ul class="clearfix">
-          <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a>
+          {{-- <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a>
             <ul>
               <li><a href="#">ログアウト</a></li>
             </ul>
-          </li>
+          </li> --}}
           <li>
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             {{-- <a href="{{ route('logout') }}"> --}}
-            ログアウト(ダミー)
+            ログアウト
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
