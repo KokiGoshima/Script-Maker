@@ -51,7 +51,7 @@
 
                 @csrf
                 @method('delete')
-                <button class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
+                <button class="btn btn-outline-danger" onclick="return confirm('選択したスクリプトを削除してもよろしいですか？');"><i class="fas fa-trash-alt"></i></button>
               {{-- outlineって入れると、白抜き、カーソル合わせたら色変わるようになる --}}
               </form>
              </div>
