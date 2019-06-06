@@ -43,8 +43,7 @@
             <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
               <a href="{{ route('scripts.edit', ['id' => $script->id]) }}">
                 <p>{{ $script->content }}</p>
-                <i class="fa far fa-file-alt fa-file-alt-script" aria-hidden="true"></i>
-                <i class="fa fa-check" aria-hidden="true"></i>
+               {{--  <i class="fa far fa-file-alt fa-file-alt-script" aria-hidden="true"></i> --}}
               </a>
 
                   {{--削除ボタンを設ける--}}
