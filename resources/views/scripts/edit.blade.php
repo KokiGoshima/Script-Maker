@@ -21,7 +21,6 @@ use App\Phrase;
 
 <body>
 {{--  アコーディオン機能 --}}
-{{-- <div class="editwrapper"> --}}
 <div id="accordianmenu">
   <ul>
       <li class="active">
@@ -182,17 +181,17 @@ use App\Phrase;
       <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
           @csrf
           @method("put")
-          <div>
-              <p class="stytle">スクリプト</p>
+          <div class="script-tytle">
+                <p class="stytle">スクリプト</p>
                   <div class="button-box">
-                      <input type="submit" value="保存" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？');">
-                      <button type="button"class="jquery_reset_perfect" onclick="submitbtn();" >クリア</button>
+                      <button type="submit" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？')">保存</button>
+                      <button type="submit" class="jquery_reset_perfect" onclick="return confirm('現在のスクリプト内容を全て削除してもよろしいですか？');" >クリア</button>
                   </div>
                   <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
           </div>
       </form>
   </div>
-{{-- </div> --}}
+
 
 
 
@@ -215,16 +214,18 @@ $(document).ready(function(){
 
 {{-- コンテンツの表示 --}}
 <script>
-        $('.topic').on('click', function(){
-          // 初期化
-          $('.topic').removeClass('current')
-          $('.topic_item').removeClass('current')
-          $(this).addClass('current')
-          console.log($(this))
-          let num = $('.topic').index(this);
-          console.log(num);
-          $('.topic_item').eq(num).addClass('current')
-        })
+
+          $('.topic').on('click', function(){
+            // 初期化
+            $('.topic').removeClass('current')
+            $('.topic_item').removeClass('current')
+            $(this).addClass('current')
+            console.log($(this))
+            let num = $('.topic').index(this);
+            console.log(num);
+            $('.topic_item').eq(num).addClass('current')
+          });
+
 </script>
 
 {{-- テキストエリア --}}
