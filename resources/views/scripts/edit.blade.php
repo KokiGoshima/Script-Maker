@@ -59,10 +59,24 @@ use App\Phrase;
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
     <!-- 挨拶 -->
-    @foreach(Construction::all() as $construction)
+    @for($i = 1; $i <= 3; $i++)
+      @if($i == 1)
+      <?php $a = 0; ?>
+      @elseif($i == 2)
+      {{-- @else --}}
+      <?php 
+      $a = Situation::where("construction_id", $i - 1)->count(); 
+      ?>
+      @else
+      <?php
+      $a = Situation::where("construction_id", $i-1)->count() + Situation::where("construction_id", $i-2)->count();
+      ?>
+      @endif
+      @for($j = 1  + $a; $j <= Situation::where("construction_id", $i)->count() + $a; $j++)
+
       <div class="scrollvar topic_item current">
 
-          <p class="situations">{{$construction->flow}} > {{$situation->pattern}}</p>
+          <p class="situations">{{ Construction::find($i)->flow }} > {{ Situation::find($j)->pattern }}</p>
 
           <div class="phrase">
             <div class="phrase-item">
@@ -71,7 +85,7 @@ use App\Phrase;
             </div>
           </div>
 
-          <div class="phrase">
+          {{-- <div class="phrase">
             <div class="phrase-item">
                     <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
                       こんにちは、今日は私のトピックについて説明します</button>
@@ -83,10 +97,11 @@ use App\Phrase;
                   <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
                     こんにちは、今日は私のトピックについて説明します</button>
             </div>
-          </div>
+          </div> --}}
 
       </div>
-    @endforeach
+      @endfor
+    @endfor
     <!-- 自己紹介 -->
     {{-- <div class="scrollvar topic_item">
 
