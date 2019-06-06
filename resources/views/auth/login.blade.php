@@ -4,6 +4,10 @@
   ログイン画面 | Script Maker
 @endsection
 
+@section("editCss")
+  <link rel="stylesheet" href="{{asset('/css/login.css')}}">
+@endsection
+
 @section('content')
 <div class="container mt-5">
     <div class="row justify-content-center">
