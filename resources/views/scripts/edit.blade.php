@@ -132,7 +132,7 @@ use App\Phrase;
     </div>
   </div>
 
-  <div class="script">
+  <div id="script">
       <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
           @csrf
           @method("put")
