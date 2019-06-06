@@ -49,10 +49,10 @@ h1{font-size:50px;margin-bottom:30px}
 #wrapper{
   overflow: hidden;
   text-align: center;
-   width: 100%;
-   max-width: 1050px;
-   margin: 0 auto;
-   padding: 0 20px;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #wrapper h1{
@@ -61,7 +61,8 @@ h1{font-size:50px;margin-bottom:30px}
 }
 
 .fa-file-alt{
-  color: gray;
+  color: red;
+  opacity: 0.7;
 }
 
 .folder{
@@ -113,15 +114,34 @@ h1{font-size:50px;margin-bottom:30px}
   border-color: transparent;
 }
 
+.fa-trash-alt{
+  font-size: 12px;
+}
+
+#folder .new-botton{
+  color: black;
+  opacity: none;
+}
+
 .main div {
     display: none;
 }
 
 .tooltiper-up p{
-  height: 186px;
   overflow: hidden;
+  height: 18em;
+  line-height: 2.25;
+  margin-bottom: 20px;
+  color: #464646;
 }
 
+.tooltiper-up p:first-line{
+  font-size: 20px
+}
+
+.tooltiper-up a{
+  text-decoration: none;
+}
 
 /*-----------------------------------------------------*/
 

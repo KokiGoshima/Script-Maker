@@ -33,7 +33,7 @@
             @csrf
               <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
                 {{-- <button> --}}
-                  <i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script"><span style="padding-left: 30px;"><button>New</button></span></p></i><i class="fa fa-check" aria-hidden="true"></i>
+                  <i class="fa aria-hidden="true"></i><i class="far fa-file-alt"><p class="new-script"><span style="padding-left: 30px;"><button class='new-botton'>New</button></span></p></i><i class="fa fa-check" aria-hidden="true"></i>
                 {{-- </button> --}}
               </div>
           </form>
