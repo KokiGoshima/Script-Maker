@@ -130,7 +130,7 @@ h1{font-size:50px;margin-bottom:30px}
 }
 
 .tooltiper-up p{
-  overflow: hidden;
+  overflow: scroll;
   height: 18em;
   line-height: 2.25;
   margin-bottom: 20px;

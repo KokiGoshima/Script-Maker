@@ -1,10 +1,3 @@
-<?php
-
-use App\Construction;
-use App\Situation;
-use App\Phrase;
-
-?>
 
 @extends('layouts.test')
 
@@ -26,8 +19,7 @@ use App\Phrase;
       <li class="active">
           <p>導入</p>
           <ul>
-            @foreach(Construction::find(1)->situations as $situation)
-            {{-- @foreach(Situation::where('flow_id', '=', 1)->get() as $situation) --}}
+            @foreach($constructions->find(1)->situations as $situation)
               <li><a class="topic">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
@@ -35,7 +27,7 @@ use App\Phrase;
       <li>
           <p>本論</p>
           <ul>
-            @foreach(Construction::find(2)->situations as $situation)
+            @foreach($constructions->find(2)->situations as $situation)
               <li><a class="topic">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
@@ -43,7 +35,7 @@ use App\Phrase;
       <li>
           <p>結論</p>
           <ul>
-             @foreach(Construction::find(3)->situations as $situation)
+             @foreach($constructions->find(3)->situations as $situation)
               <li><a class="topic">{{ $situation->pattern }}</a></li>
             @endforeach
           </ul>
@@ -58,26 +50,21 @@ use App\Phrase;
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
     <!-- 挨拶 -->
-    @for($i = 1; $i <= 3; $i++)
+    @for($i = 1; $i <= $constructions->count(); $i++)
+
       @if($i == 1)
       <?php $a = 0; ?>
-      @elseif($i == 2)
-      {{-- @else --}}
-      <?php 
-      $a = Situation::where("construction_id", $i - 1)->count(); 
-      ?>
       @else
-      <?php
-      $a = Situation::where("construction_id", $i-1)->count() + Situation::where("construction_id", $i-2)->count();
-      ?>
+      <?php $a = $j -1; ?>
       @endif
-      @for($j = 1  + $a; $j <= Situation::where("construction_id", $i)->count() + $a; $j++)
+
+      @for($j = 1  + $a; $j <= $situations->where("construction_id", $i)->count() + $a; $j++)
 
       <div class="scrollvar topic_item current">
 
-          <p class="situations">{{ Construction::find($i)->flow }} > {{ Situation::find($j)->pattern }}</p>
+          <p class="situations">{{ $constructions->find($i)->flow }} > {{ $situations->find($j)->pattern }}</p>
   
-        @foreach(Situation::find($j)->phrases as $phrase)
+        @foreach($situations->find($j)->phrases as $phrase)
           <div class="phrase">
             <div class="phrase-item">
                   <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
@@ -86,94 +73,10 @@ use App\Phrase;
           </div>
         @endforeach
 
-          {{-- <div class="phrase">
-            <div class="phrase-item">
-                    <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
-                      こんにちは、今日は私のトピックについて説明します</button>
-            </div>
-          </div>
-
-          <div class="phrase">
-            <div class="phrase-item">
-                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Hello I would like to explain about my topic.  ">Hello I would like to explain about my topic.<br>
-                    こんにちは、今日は私のトピックについて説明します</button>
-            </div>
-          </div> --}}
-
       </div>
       @endfor
     @endfor
-    <!-- 自己紹介 -->
-    {{-- <div class="scrollvar topic_item">
 
-        <p class="situations">導入 > 自己紹介</p>
-
-        <div class="phrase">
-            <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="My name is naoki.  ">My name is naoki.<br>
-                  わたしの名前は直樹です。</button>
-            </div>
-        </div>
-
-    </div>
-    <!-- 感謝 -->
-    <div class="scrollvar topic_item">
-
-        <p class="situations">導入 > 感謝</p>
-
-        <div class="phrase">
-            <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
-                  今日はお越し頂きありがとうございます。</button>
-            </div>
-        </div>
-
-    </div> --}}
-    <!-- プレゼンテーマ -->
-    {{-- <div class="scrollvar topic_item">
-
-      <p class="situations">導入 > プレゼンテーマ</p>
-
-      <div class="phrase">
-
-          <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
-                今日はお越し頂きありがとうございます。</button>
-          </div>
-
-      </div>
-
-    </div> --}}
-    <!-- プレゼン時間 -->
-    {{-- <div class="scrollvar topic_item">
-
-        <p class="situations">導入 > プレゼン時間</p>
-
-        <div class="phrase">
-
-            <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
-                  今日はお越し頂きありがとうございます。</button>
-            </div>
-
-        </div>
-
-    </div> --}}
-    <!-- 質疑応答 -->
- {{--    <div class="scrollvar topic_item">
-
-        <p class="situations">導入 > 質疑応答</p>
-
-        <div class="phrase">
-
-            <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="Thank you for coming my presentation.  ">Thank you for coming my presentation.<br>
-                  今日はお越し頂きありがとうございます。</button>
-            </div>
-
-        </div>
-
-    </div> --}}
 
   </div>
 

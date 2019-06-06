@@ -13,7 +13,6 @@ use App\Phrase;
 class ScriptController extends Controller
 {
     public function index(){
-        // $scripts = Script::all()->where("user_id", Auth::user()->id);
         $scripts = Script::all();
     	return view("scripts.index", ["scripts" => $scripts]);
     }
@@ -28,14 +27,11 @@ class ScriptController extends Controller
     }
 
     public function edit($id){
-        // $construction = Construction::find(3);
-        // $situations = Situation::all();
-        // $phrases = Phrase::all();
-        // dd(Construction::find(1)->flow);
+        $constructions = Construction::all();
+        $situations = Situation::all();
+        $phrases = Phrase::all();
         $script = Script::find($id);
-        // dd($script);
-    	// return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
-        return view("scripts.edit", ["script" => $script]);
+    	return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
     }
 
     public function update($id, CreateScript $request){
@@ -50,7 +46,6 @@ class ScriptController extends Controller
     }
 
     public function destroy($id){
-        // dd($id);
     	$script = Script::find($id);
         $script->delete();
         return redirect()->route("scripts.index");
