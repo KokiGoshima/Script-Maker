@@ -50,19 +50,14 @@
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
     <!-- 挨拶 -->
-    @for($i = 1; $i <= 3; $i++)
+    @for($i = 1; $i <= $constructions->count(); $i++)
+
       @if($i == 1)
       <?php $a = 0; ?>
-      @elseif($i == 2)
-      <?php 
-      $a = $situations->where("construction_id", $i - 1)->count(); 
-      ?>
       @else
-      <?php
-      $a = $situations->where("construction_id", $i-1)->count() + $situations->where("construction_id", $i-2)->count();
-      ?>
+      <?php $a = $j -1; ?>
       @endif
-      
+
       @for($j = 1  + $a; $j <= $situations->where("construction_id", $i)->count() + $a; $j++)
 
       <div class="scrollvar topic_item current">
