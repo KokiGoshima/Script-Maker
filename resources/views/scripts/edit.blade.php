@@ -14,34 +14,35 @@
 
 <body>
 {{--  アコーディオン機能 --}}
-<div id="accordianmenu">
-  <ul>
-      <li class="active">
-          <p>導入</p>
-          <ul>
-            @foreach($constructions->find(1)->situations as $situation)
-              <li><a class="topic">{{ $situation->pattern }}</a></li>
-            @endforeach
-          </ul>
-      </li>
-      <li>
-          <p>本論</p>
-          <ul>
-            @foreach($constructions->find(2)->situations as $situation)
-              <li><a class="topic">{{ $situation->pattern }}</a></li>
-            @endforeach
-          </ul>
-      </li>
-      <li>
-          <p>結論</p>
-          <ul>
-             @foreach($constructions->find(3)->situations as $situation)
-              <li><a class="topic">{{ $situation->pattern }}</a></li>
-            @endforeach
-          </ul>
-      </li>
-  </ul>
-</div>
+<div id="container">
+  <div id="accordianmenu">
+    <ul>
+        <li class="active">
+            <p>導入</p>
+            <ul>
+              @foreach($constructions->find(1)->situations as $situation)
+                <li><a class="topic current">{{ $situation->pattern }}</a></li>
+              @endforeach
+            </ul>
+        </li>
+        <li>
+            <p>本論</p>
+            <ul>
+              @foreach($constructions->find(2)->situations as $situation)
+                <li><a class="topic">{{ $situation->pattern }}</a></li>
+              @endforeach
+            </ul>
+        </li>
+        <li>
+            <p>結論</p>
+            <ul>
+              @foreach($constructions->find(3)->situations as $situation)
+                <li><a class="topic">{{ $situation->pattern }}</a></li>
+              @endforeach
+            </ul>
+        </li>
+    </ul>
+  </div>
 
 
 
@@ -49,7 +50,6 @@
 
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
-    <!-- 挨拶 -->
     @for($i = 1; $i <= $constructions->count(); $i++)
 
       @if($i == 1)
@@ -76,10 +76,10 @@
       </div>
       @endfor
     @endfor
-
-
   </div>
 
+
+  {{-- テキスト画面  --}}
   <div id="script">
       <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post">
           @csrf
@@ -94,7 +94,7 @@
           </div>
       </form>
   </div>
-
+</div>
 
 
 
