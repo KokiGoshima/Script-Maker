@@ -39,7 +39,7 @@
           </form>
 
           {{-- @foreach($scripts as $script) --}}
-          @foreach(Auth::user()->scripts as $script)
+          @foreach($scripts as $script)
             <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
               <a href="{{ route('scripts.edit', ['id' => $script->id]) }}">
                 <p>{{ $script->content }}</p>
