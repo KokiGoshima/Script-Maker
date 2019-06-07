@@ -50,32 +50,54 @@
 
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
-    @for($i = 1; $i <= $constructions->count(); $i++)
 
-      @if($i == 1)
-      <?php $a = 0; ?>
-      @else
-      <?php $a = $j -1; ?>
-      @endif
+    <!-- 挨拶 -->
+  <div class="scrollvar topic_item current">
 
-      @for($j = 1  + $a; $j <= $situations->where("construction_id", $i)->count() + $a; $j++)
+    <p class="situations">{{ $constructions->find(1)->flow }} > {{ $situations->find(1)->pattern }}</p>
 
-      <div class="scrollvar topic_item current">
 
-          <p class="situations">{{ $constructions->find($i)->flow }} > {{ $situations->find($j)->pattern }}</p>
-  
-        @foreach($situations->find($j)->phrases as $phrase)
-          <div class="phrase">
-            <div class="phrase-item">
-                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
-                    {{ $phrase->japaneseSentence }}</button>
-            </div>
-          </div>
-        @endforeach
-
+    @foreach($situations->find(1)->phrases as $phrase)
+      <div class="phrase">
+        <div class="phrase-item">
+              <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
+                {{ $phrase->japaneseSentence }}</button>
+        </div>
       </div>
-      @endfor
+    @endforeach
+
+  </div>
+
+  @for($i = 1; $i <= $constructions->count(); $i++)
+
+    @if($i == 1)
+    <?php $a = 2; $b = 0;?>
+    @else
+    <?php $a = $j; $b = $j - 1; ?>
+    @endif
+
+    @for($j = $a; $j <= $situations->where("construction_id", $i)->count() + $b; $j++)
+
+    <div class="scrollvar topic_item">
+
+        <p class="situations">{{ $constructions->find($i)->flow }} > {{ $situations->find($j)->pattern }}</p>
+
+      @foreach($situations->find($j)->phrases as $phrase)
+        <div class="phrase">
+          <div class="phrase-item">
+                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
+                  {{ $phrase->japaneseSentence }}</button>
+          </div>
+        </div>
+      @endforeach
+
+    </div>
     @endfor
+
+  @endfor
+
+
+
   </div>
 
 
