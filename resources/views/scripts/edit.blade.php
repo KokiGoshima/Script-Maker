@@ -68,12 +68,12 @@
   @for($i = 1; $i <= $constructions->count(); $i++)
 
     @if($i == 1)
-    <?php $a = 0; ?>
+    <?php $a = 2; $b = 0;?>
     @else
-    <?php $a = $j -1; ?>
+    <?php $a = $j; $b = $j - 1; ?>
     @endif
 
-    @for($j = 2  + $a; $j <= $situations->where("construction_id", $i)->count() + $a; $j++)
+    @for($j = $a; $j <= $situations->where("construction_id", $i)->count() + $b; $j++)
 
     <div class="scrollvar topic_item">
 
