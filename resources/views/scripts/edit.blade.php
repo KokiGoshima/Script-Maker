@@ -73,7 +73,7 @@
     <?php $a = $j -1; ?>
     @endif
 
-    @for($j = 1  + $a; $j <= $situations->where("construction_id", $i)->count() + $a; $j++)
+    @for($j = 2  + $a; $j <= $situations->where("construction_id", $i)->count() + $a; $j++)
 
     <div class="scrollvar topic_item">
 
