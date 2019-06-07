@@ -17,7 +17,7 @@ $(function(){
 $(function() {
 
   //マウスを乗せたら発動
-  $('.new-botton').hover(function() {
+  $('.new-script').hover(function() {
 
     //マウスを乗せたら色が変わる
     $(this).css('color', 'red');
