@@ -13,7 +13,9 @@ use App\Phrase;
 class ScriptController extends Controller
 {
     public function index(){
-        $scripts = Script::all();
+        // $scripts = Script::all()->orderBy("created_at", "desc");
+        $scripts = Script::orderBy("created_at", "desc")->get();
+        // dd($scripts);
     	return view("scripts.index", ["scripts" => $scripts]);
     }
 
