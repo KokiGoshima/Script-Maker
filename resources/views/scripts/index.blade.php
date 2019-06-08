@@ -41,6 +41,7 @@
           @foreach($scripts as $script)
             <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
               <a href="{{ route('scripts.edit', ['id' => $script->id]) }}">
+                <span>{{ $script->title }}</span>
                 <p>{{ $script->content }}</p>
                {{--  <i class="fa far fa-file-alt fa-file-alt-script" aria-hidden="true"></i> --}}
               </a>
