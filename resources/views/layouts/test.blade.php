@@ -45,22 +45,19 @@
         <div class="logo">
         <a href="{{ url('/scripts') }}">Script Maker</a>
         </div>
-        <ul class="clearfix">
-          {{-- <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a>
-            <ul>
-              <li><a href="#">ログアウト</a></li>
-            </ul>
-          </li> --}}
+        <ul class="clearfix icon">
           <li>
+
             <a id="logout" href="{{ route('logout') }}" >
             ログアウト
             </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+
               @csrf
             </form>
           </li>
-          <li><a href="{{ route('scripts.index') }}" >マイスクリプト</a></li>
-          <li><a href="{{ route('scripts.sample') }}" >完成例一覧</a></li>
+          <li><a class="container" href="{{ route('scripts.index') }}" ><i class="fas fa-folder"></i><span>マイスクリプト</span></a></li>
+          <li><a class="container" href="{{ route('scripts.sample') }}" ><i class="fas fa-book-reader"></i><span>完成例一覧</span></a></li>
         </ul>
       @endguest
     </nav>
