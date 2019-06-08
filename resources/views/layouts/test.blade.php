@@ -52,8 +52,7 @@
             </ul>
           </li> --}}
           <li>
-            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            {{-- <a href="{{ route('logout') }}"> --}}
+            <a id="logout" href="{{ route('logout') }}" >
             ログアウト
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -77,6 +76,15 @@
   <footer>
     <p class="copyright"><small>Copyright (C) 2019 Nohohon All rights reserved</small></p>
   </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $('#logout').on('click',function(){
+    if(confirm('ログアウトしますか？')){
+      event.preventDefault(); document.getElementById('logout-form').submit();
+    }else{
+      return false;
+    }
+});
+</script>
 </body>
 </html>
