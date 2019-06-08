@@ -45,23 +45,17 @@
         <div class="logo">
         <a href="{{ url('/scripts') }}">Script Maker</a>
         </div>
-        <ul class="clearfix">
-          {{-- <li><a href="#"><img src="{{asset('img/account.png')}}" alt="account"></a>
-            <ul>
-              <li><a href="#">ログアウト</a></li>
-            </ul>
-          </li> --}}
+        <ul class="clearfix icon">
           <li>
-            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            {{-- <a href="{{ route('logout') }}"> --}}
-            ログアウト
-            </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+
+            <a class="container" id="logout" href="{{ route('logout') }}" ><i class="fas fa-sign-out-alt"></i><span>ログアウト</span></a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+
               @csrf
             </form>
           </li>
-          <li><a href="{{ route('scripts.index') }}" >マイスクリプト</a></li>
-          <li><a href="{{ route('scripts.sample') }}" >完成例一覧</a></li>
+          <li><a class="container" href="{{ route('scripts.index') }}" ><i class="fas fa-folder"></i><span>マイスクリプト</span></a></li>
+          <li><a class="container" href="{{ route('scripts.sample') }}" ><i class="fas fa-book-reader"></i><span>完成例一覧</span></a></li>
         </ul>
       @endguest
     </nav>
@@ -77,6 +71,15 @@
   <footer>
     <p class="copyright"><small>Copyright (C) 2019 Nohohon All rights reserved</small></p>
   </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $('#logout').on('click',function(){
+    if(confirm('ログアウトしますか？')){
+      event.preventDefault(); document.getElementById('logout-form').submit();
+    }else{
+      return false;
+    }
+});
+</script>
 </body>
 </html>

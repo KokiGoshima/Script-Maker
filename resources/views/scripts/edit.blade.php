@@ -8,6 +8,7 @@
 
 @section("editCss")
   <link rel="stylesheet" href="{{asset('/css/edit.css')}}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 @endsection
 
 @section('content')
@@ -109,8 +110,10 @@
           <div class="script-tytle">
                 <p class="stytle">スクリプト</p>
                   <div class="button-box">
+
                       <button type="submit" data-id="{{ $script->id }}">保存</button>
                       <button type="submit" class="jquery_reset_perfect" onclick="return confirm('現在のスクリプト内容を全て削除してもよろしいですか？');" >クリア</button>
+
                   </div>
                   <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
           </div>

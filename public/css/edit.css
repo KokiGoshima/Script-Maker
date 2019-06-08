@@ -195,7 +195,7 @@ textarea {
 
 
   #script{
-    width:500px;
+    width:550px;
     height:580px;
     border: solid 1px #000; 
 
@@ -204,7 +204,7 @@ textarea {
   
   
   .stytle{
-    width:498px;
+    width:540px;
     background-color: #6599e0;
     float:left;
     margin-bottom : 10px;
@@ -230,7 +230,7 @@ textarea {
   }
   
   textarea {
-    width:498px;
+    width:540px;
     height: 520px;
     background-image:
       repeating-linear-gradient(
