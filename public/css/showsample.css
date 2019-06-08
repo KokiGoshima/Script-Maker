@@ -1,86 +1,84 @@
 body{background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;background-size:cover;font-weight:400;min-height:100vh}
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-
-.tabs {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-#tab-button {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-#tab-button li {
-  display: table-cell;
-  width: 20%;
-}
-#tab-button li a {
-  display: block;
-  padding: .5em;
-  background: #FFFFFF;
-  border: 1px solid #ddd;
-  text-align: center;
-  color: #000;
-  text-decoration: none;
-}
-#tab-button li:not(:first-child) a {
-  border-left: none;
-}
-#tab-button li a:hover,
-#tab-button .is-active a {
-  border-bottom-color: transparent;
-  background: #CCCCCC;
-}
-.tab-contents {
-  padding: .5em 2em 1em;
-  border: 1px solid #ddd;
-}
-
-
-
-.tab-button-outer {
-  display: none;
-}
-.tab-contents {
-  margin-top: 20px;
-}
-@media screen and (min-width: 768px) {
-  .tab-button-outer {
-    position: relative;
-    z-index: 2;
-    display: block;
-    margin-top: 50px;
-  }
-  .tab-select-outer {
-    display: none;
-  }
-  .tab-contents {
-    position: relative;
-    top: -1px;
-    margin-top: 0;
-
-    margin-bottom:20px;
-
-    background-color: #fff;
-    height: 500px;
-  }
-
 
 .copy{
   text-align: right;
-  margin-bottom: 10px;
 }
 
+/*
 .return-script{
   text-align: center;
   margin-bottom:50px;
 }
+*/
+
+#carousel3d .carousel-3d-slide {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+/*  -webkit-transition: all .4s;
+  transition: all .4s;*/
+}
+
+.example{
+  overflow:scroll;
+}
+
+#carousel3d .carousel-3d-slide.current {
+  background-color: #fff;
+  height:500px !important;
+  width: 400px !important;
+}
+#carousel3d .carousel-3d-slide.current span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.carousel-3d-slide.right-1{
+  height:450px !important;
+  width: 400px !important;
+}
+.carousel-3d-slide.left-1{
+  height:450px !important;
+  width: 400px !important;
+}
+.carousel-3d-slide.left-2{
+  height:450px !important;
+  width: 400px !important;
+}
+
+.carousel-3d-container{
+  height:600px !important;
+}
+
+
+
+.modal-center {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
