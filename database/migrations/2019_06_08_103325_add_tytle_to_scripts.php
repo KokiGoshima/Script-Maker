@@ -14,7 +14,7 @@ class AddTytleToScripts extends Migration
     public function up()
     {
         Schema::table('scripts', function (Blueprint $table) {
-            $table->string("title");
+            $table->string("title")->nullable();
         });
     }
 
