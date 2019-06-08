@@ -141,14 +141,17 @@ body {
 }
 
 
-
-.stytle{
+.tytle{
   width:593px;
   background-color: #6599e0;
   float:left;
   margin-bottom : 10px;
 }
 
+.text-tytle{
+  width:300px;
+  margin-bottom:5px;
+}
 
 
 .button-box{
@@ -167,9 +170,9 @@ body {
   border-radius: 5px;
 }
 
-textarea {
+.scripttext {
   width:698px;
-  height: 544px;
+  height: 511px;
   background-image:
     repeating-linear-gradient(
       #fff,
@@ -181,6 +184,7 @@ textarea {
   background-origin: content-box;
   background-clip: content-box;
   background-attachment: local;
+  overflow:auto;
 }
 
 
@@ -229,7 +233,7 @@ textarea {
     border-radius: 5px;
   }
   
-  textarea {
+  .scripttext{
     width:540px;
     height: 520px;
     background-image:
@@ -243,6 +247,7 @@ textarea {
     background-origin: content-box;
     background-clip: content-box;
     background-attachment: local;
+    overflow:auto;
   }
   
 }
