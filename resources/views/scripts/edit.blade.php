@@ -110,7 +110,7 @@
                 <p class="stytle">スクリプト</p>
                   <div class="button-box">
                       <button type="submit" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？')">保存</button>
-                      <button type="submit" class="jquery_reset_perfect" onclick="return confirm('現在のスクリプト内容を全て削除してもよろしいですか？');" >クリア</button>
+                      <button type="submit" class="jquery_reset_perfect" {{-- onclick="return confirm('現在のスクリプト内容を全て削除してもよろしいですか？');" --}} >クリア</button>
                   </div>
                   <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
           </div>
