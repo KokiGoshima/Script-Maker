@@ -104,16 +104,17 @@
 
   {{-- テキスト画面  --}}
   <div id="script">
-  <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post" id = "form_{{ $script->id }}" >
+        <form name="scriptForm" action = "{{ route('scripts.update', ['id' => $script->id]) }}" method="post" id = "form_{{ $script->id }}" >
           @csrf
           @method("put")
           <div class="script-tytle">
-                <p class="stytle">スクリプト</p>
+                <p class="tytle">スクリプト</p>
                   <div class="button-box">
                   <button type="submit" data-id="{{$script->id}}" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？')">保存</button>
                       <button type="submit" class="jquery_reset_perfect">クリア</button>
                   </div>
-                  <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
+                  <input class="text-tytle" type="text" name="tytle" placeholder="タイトルを入力してください">
+                  <textarea id="text1" class="scripttext" name="textbox" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
           </div>
       </form>
   </div>
@@ -185,7 +186,12 @@ $('.jquery_reset_perfect').on('click', function(){
 });
 </script>
 
-
-
+<script>
+$(function() {
+  $("input:not(.allow_submit)").on("keypress", function(){
+    return event.which !== 13;
+  });
+});
+</script>
 
 @endsection
