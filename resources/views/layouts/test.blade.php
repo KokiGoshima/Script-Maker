@@ -48,9 +48,7 @@
         <ul class="clearfix icon">
           <li>
 
-            <a id="logout" href="{{ route('logout') }}" >
-            ログアウト
-            </a>
+            <a class="container" id="logout" href="{{ route('logout') }}" ><i class="fas fa-sign-out-alt"></i><span>ログアウト</span></a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST">
 
               @csrf
