@@ -17,7 +17,7 @@ header ul li{float:left;text-transform:uppercase;font-size:14px;color:#333;margi
 .input-wrap,.left,.right,nav ul{position:relative}
 /*#searchbar,.input-wrap i{background:#fff;color:#333}*/
 /*.main{width:60%;float:left;margin-left:100px;margin-top:50px}*/
-.left{margin-top:30px}
+.left{margin-top:65px}
 .right{width:25%;float:right;background:#fff;padding:30px;height:70vh;min-height:500px;margin-top:50px;margin-bottom:10vh}
 .left:after,.right:after{content:"";display:table;clear:both}
 h1{font-size:50px;margin-bottom:30px}

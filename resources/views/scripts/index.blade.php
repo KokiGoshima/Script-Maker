@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="yourFiles.css"> <!-- 追加 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> <!-- 追加 --> 
-</head> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> <!-- 追加 -->
+</head>
 {{-- <body> --}}
 @extends('layouts.test')
 
@@ -25,7 +25,6 @@
 @section('content')
   <section id="wrapper">
     <div>
-      <h1>Your Script</h1>
       <div class="main">
         <div class="left">
 
@@ -33,7 +32,7 @@
             @csrf
               <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
                 {{-- <button> --}}
-                  <i class="fa aria-hidden="true"></i><i class="far fa-file-alt" style="padding-top: 15px;"><p class="new-script" style="padding-left: 15px;"><span style="padding-left: 30px;"><button style=" display: block; position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class='new-botton'>{{-- <i class="fas fa-plus-square"></i> --}}</button></span>New</p></i>{{-- <i class="fa fa-check" aria-hidden="true"></i> --}}
+                  <i class="fa aria-hidden"></i><i class="far fa-file-alt" style="padding-top: 15px;"><p class="new-script" style="padding-left: 15px;"><span style="padding-left: 30px;"><button style=" display: block; position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class='new-botton'>{{-- <i class="fas fa-plus-square"></i> --}}</button></span>New</p></i>{{-- <i class="fa fa-check" aria-hidden="true"></i> --}}
                 {{-- </button> --}}
               </div>
           </form>
