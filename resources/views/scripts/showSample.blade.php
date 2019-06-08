@@ -1,7 +1,7 @@
 @extends('layouts.test')
 
 @section('title')
-  参考画面 | Script maker
+参考画面 | Script maker
 @endsection
 
 @section("showSampleCss")
@@ -13,64 +13,79 @@
 
 
 {{-- スラーダー --}}
-  <div id="carousel3d">
+<div id="carousel3d">
   <carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" :controls-height="60" :clickable="true">
 
-   <slide :index="0">
-    <div class="example">
-       <div class="copy">
-        <button class="btn btn-outline-primary"onclick="copy1()"><i class="far fa-copy"></i>全英文コピー</button>
-    　 </div>
-          <div class="title">例1</div>
-            <span id="english-script1">1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, </span>
-            <br>
-            <div class="japanese-script">
-              みなさんこんにちは.......
-            </div>
+    <slide :index="0">
+      <div class="example">
+        <div class="copy">
+          <button class="btn btn-outline-primary"onclick="copy1()"><i class="far fa-copy"></i>全英文コピー</button>
         </div>
+        <div class="title">例1</div>
+        <span id="english-script1">1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, </span>
+        <br>
+        <div class="japanese-script">
+          みなさんこんにちは.......
+        </div>
+      </div>
     </slide>
 
     <slide :index="1">
       <div class="example">
-       <div class="copy">
-        <button class="btn btn-outline-primary" onclick="copy2()"><i class="far fa-copy"></i>全英文コピー</button>
-    　 </div>
-          <div class="title">例2</div>
-            <span id="english-script2">2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service</span>
-            <br>
-            <div class="japanese-script">
-              みなさんこんにちは.......
-            </div>
+        <div class="copy">
+          <button class="btn btn-outline-primary" onclick="copy2()"><i class="far fa-copy"></i>全英文コピー</button>
         </div>
+        <div class="title">例2</div>
+        <span id="english-script2">2 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, </span>
+        <br>
+        <div class="japanese-script">
+          みなさんこんにちは.......
+        </div>
+      </div>
     </slide>
 
     <slide :index="2">
       <div class="example">
-       <div class="copy">
-        <button class="btn btn-outline-primary" onclick="copy3()"><i class="far fa-copy"></i>全英文コピー</button>
-    　 </div>
-          <div class="title">例3</div>
-            <span id="english-script3">3 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 3 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service3 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service </span>
-            <br>
-            <div class="japanese-script">
-              みなさんこんにちは.......
-            </div>
+        <div class="copy">
+          <button class="btn btn-outline-primary" onclick="copy3()"><i class="far fa-copy"></i>全英文コピー</button>
         </div>
-      </slide>
+        <div class="title">例3</div>
+        <span id="english-script3">3 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, </span>
+        <br>
+        <div class="japanese-script">
+          みなさんこんにちは.......
+        </div>
+      </div>
+    </slide>
 
     <slide :index="3">
       <div class="example">
-       <div class="copy">
-        <button class="btn btn-outline-primary" onclick="copy4()"><i class="far fa-copy"></i>全英文コピー</button>
-    　 </div>
-          <div class="title">例4</div>
-            <span id="english-script4">4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service  </span>
-            <br>
-            <div class="japanese-script">
-              みなさんこんにちは.......
-            </div>
+        <div class="copy">
+          <button class="btn btn-outline-primary" onclick="copy4()"><i class="far fa-copy"></i>全英文コピー</button>
+        　 </div>
+        <div class="title">例4</div>
+        <span id="english-script4">4 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, </span>
+        <br>
+        <div class="japanese-script">
+          みなさんこんにちは.......
         </div>
+      </div>
     </slide>
+
+    <slide :index="4">
+  <div class="example">
+    <div class="copy">
+      <button class="btn btn-outline-primary"onclick="copy5()"><i class="far fa-copy"></i>全英文コピー</button>
+    </div>
+    <div class="title">例5</div>
+    <span id="english-script5">1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service1 Good afternoon everyone. Thank you for coming to our presentation. Today, we would like to introduce our Web service 1 Good afternoon everyone. Thank you for coming to our presentation. Today, </span>
+    <br>
+    <div class="japanese-script">
+      みなさんこんにちは.......
+    </div>
+  </div>
+</slide>
+
   </carousel-3d>
 </div>
 

@@ -66,18 +66,18 @@ function copy4(){
   alert('コピーしました');
 }
 
-// function copy5(){
-//   //範囲を指定
-//   let range = document.createRange();
-//   let span = document.getElementById('example5');
-//   range.selectNodeContents(span);
+function copy5(){
+  //範囲を指定
+  let range = document.createRange();
+  let span = document.getElementById('english-script5');
+  range.selectNodeContents(span);
 
-//   //指定した範囲を選択状態にする
-//   let selection = document.getSelection();
-//   selection.removeAllRanges();
-//   selection.addRange(range);
+  //指定した範囲を選択状態にする
+  let selection = document.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
 
-//   //コピー
-//   document.execCommand('copy');
-//   alert('コピーしました');
-// }
+  //コピー
+  document.execCommand('copy');
+  alert('コピーしました');
+}
