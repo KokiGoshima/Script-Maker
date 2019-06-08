@@ -45,10 +45,6 @@
     </ul>
   </div>
 
-
-
-
-
   {{-- フレーズ画面 --}}
   <div id="phrases-box">
 
@@ -111,7 +107,7 @@
                 <p class="stytle">スクリプト</p>
                   <div class="button-box">
                       <button type="submit" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？')">保存</button>
-                      <button type="submit" class="jquery_reset_perfect" {{-- onclick="return confirm('現在のスクリプト内容を全て削除してもよろしいですか？');" --}} >クリア</button>
+                      <button type="submit" class="jquery_reset_perfect";>クリア</button>
                   </div>
                   <textarea id="text1" class="scripttext" name="textbox" cols="100" rows="20"  style="overflow:auto" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
           </div>
@@ -179,7 +175,7 @@ return document.scriptForm.textbox.value = before + str + after;
   //完全リセット
 $('.jquery_reset_perfect').on('click', function(){
   // 「OK」ボタン押下時
-  if (confirm('実行しますか？')) {
+  if (confirm('現在のスクリプト内容を全て削除してもよろしいですか？')) {
     $('.scripttext').val('');
    // 「キャンセル」ボタン押下時
    } else {
