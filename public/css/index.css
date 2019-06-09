@@ -137,8 +137,12 @@ h1{font-size:50px;margin-bottom:30px}
   color: #464646;
 }
 
-.tooltiper-up p:first-line{
+/*.tooltiper-up p:first-line{
   font-size: 20px
+}*/
+
+.new-script{
+  font-size: 20px;
 }
 
 .tooltiper-up a{

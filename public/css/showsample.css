@@ -42,20 +42,29 @@ body{background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-rep
   width: 400px !important;
 }
 #carousel3d .carousel-3d-slide.current span {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.title{
   font-size: 20px;
   font-weight: 500;
 }
 
 .carousel-3d-slide.right-1{
-  height:450px !important;
-  width: 400px !important;
+  height:550px !important;
+  width: 450px !important;
 }
 .carousel-3d-slide.left-1{
-  height:450px !important;
+  height:550px !important;
+  width: 450px !important;
+}
+.carousel-3d-slide.right-2{
+  height:500px !important;
   width: 400px !important;
 }
 .carousel-3d-slide.left-2{
-  height:450px !important;
+  height:500px !important;
   width: 400px !important;
 }
 
@@ -72,8 +81,15 @@ body{background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-rep
 }
 
 
+.prev[data-v-43e93932]{
+  left: 100px!important;
+  font-size: 100px!important;
+}
 
-
+.next[data-v-43e93932]{
+  right: 100px!important;
+  font-size: 100px!important;
+}
 
 
 

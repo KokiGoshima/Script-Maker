@@ -63,15 +63,15 @@ header nav li{
 }
 
 header nav ul li a{
-  text-decoration : none;
+  text-decoration : none!important;
   background-color : #065fe3;
-  color : #ffffff;
+  color : #ffffff!important;;
   display : block;
   line-height: 80px;
 }
 
 header nav ul li a:hover{
-  color: rgba(255,255,255, 0.7);
+  color: rgba(255,255,255, 0.7)!important;
   text-decoration: none;
 }
 
