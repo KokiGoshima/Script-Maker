@@ -7,6 +7,7 @@
 
 @section("editCss")
   <link rel="stylesheet" href="{{asset('/css/register.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Corben:700 rel="stylesheet">
 @endsection
 
 
