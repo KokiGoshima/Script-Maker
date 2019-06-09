@@ -43,6 +43,7 @@ class ScriptController extends Controller
         $script->content = $request->textbox;
         $script->title = $request->title;
         $script->save();
+        $request->session()->flash('message', '保存しました');
         return redirect()->route("scripts.edit", ['id' => $id]);
     }
 

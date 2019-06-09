@@ -118,6 +118,9 @@
                   @if($errors->any())
                   <span class = "error" style="color: red;">{{ $errors->first() }}</span>
                   @endif
+                  @if(Session::has('message'))
+                    <span class = "save" style="color: red;">{{ session('message') }}</span>
+                  @endif
                   <textarea id="text1" class="scripttext" name="textbox" placeholder="テキストを入力してください">{{ old('content', $script->content) }}</textarea><br>
           </div>
       </form>
