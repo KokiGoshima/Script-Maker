@@ -24,14 +24,13 @@ class CreateScript extends FormRequest
     public function rules()
     {
         return [
-            "title" => 'required|max:30'
+            "title" => 'max:30'
         ];
     }
 
     public function messages(){
         return[
-            "title.max" => "30文字以内で入力してください",
-            "title.required" => "タイトルを入力してください"
+            "title.max" => "30文字以内で入力してください"
         ];
     }
 }

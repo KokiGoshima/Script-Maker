@@ -185,8 +185,9 @@ return document.scriptForm.textbox.value = before + str + after;
 
 <script>
   //完全リセット
-$('.jquery_reset_perfect').on('click', function(){
+$('.jquery_reset_perfect').on('click', function(e){
   // 「OK」ボタン押下時
+  e.preventDefault();
   if (confirm('現在のスクリプト内容を全て削除してもよろしいですか？')) {
     $('.scripttext').val('');
    } 
