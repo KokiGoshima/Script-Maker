@@ -24,7 +24,14 @@ class CreateScript extends FormRequest
     public function rules()
     {
         return [
-            //
+            "title" => 'required|regex:/^[a-zA-Z0-9]+$/'
+        ];
+    }
+
+    public function messages(){
+        return[
+            "title.regex" => "日本語が含まれています",
+            "title.required" => "タイトルを入力してください"
         ];
     }
 }
