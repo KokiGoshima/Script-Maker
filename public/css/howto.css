@@ -1,17 +1,23 @@
-/*文字とドラック＆ドロップ動作動画*/
-.main-contents{
-    margin-top: 100px;
-    margin-bottom:100px;
-    margin-right: 60px;
-    margin-left: 100px;
+header{
+    position: fixed;
+    z-index:24;
 }
 
+/*文字とドラック＆画像*/
+.main-contents{
+    padding-top: 100px;
+    padding-bottom:100px;
+    padding-right: 60px;
+    padding-left: 100px;
+    background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) no-repeat 87% 76% / 100% 100%,url(../images/pic.jpg);
+    background-size:cover;
+}
 
 /*文字の部分全体*/
 .content{
     float: left;
-    width: 580px;
-    margin-top: 100px;
+    width: 50%;
+    margin-top: 200px;
 }
 /*太文字部分*/
 .about-content{
@@ -35,17 +41,14 @@ to {
 }
 }
 
-/*ドラック＆ドロップ動作の動画*/
-video{
-    height:50%;
-    width: 50%;
+.presentationimg{
+padding-top: 100px;
 }
 
-/*ビデオのサイズ*/
-.video-content img{
-    height:400px;
-    width: 500px;
-    margin-left: 50px;
+.presentationimg img{
+border-radius: 50%;
+height: 500px;
+width: 500px;
 }
 
 
@@ -54,6 +57,7 @@ video{
     margin-top:-15%;
     padding: 10%;
 }
+
 .how-section1 h4{
     color: #ffa500;
     font-weight: bold;
@@ -63,19 +67,26 @@ video{
     color: #3931af;
     font-size: 20px;
 }
+
 .how-section1 .row
 {
-    margin-top: 10%;
+    margin-top: 80px;
 }
-.how-img 
+
+.how-img
 {
     text-align: center;
 }
-.how-img img{
-    width: 40%;
-}
 
+.how-img img{
+    width: 100%;
+    height: 100%;
+
+}
 
 .subheading{
-    margin-top:50px;
+    margin-top:80px;
 }
+
+
+
