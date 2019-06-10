@@ -1,7 +1,7 @@
 body{background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) no-repeat 87% 76% / 100% 100%,url(../images/pic.jpg);}
 
 /*ちらつき防止*/
-.example{
+.example,.return-script{
   display:none;
 }
 

@@ -1,5 +1,5 @@
 $(function(){
-  $('.example').each(function(i) {
+  $('.example,.return-script').each(function(i) {
     $(this).delay(100 * i).show();
   });
 });
