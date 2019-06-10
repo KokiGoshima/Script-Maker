@@ -72,14 +72,6 @@
     <p class="copyright"><small>Copyright (C) 2019 Nohohon All rights reserved</small></p>
   </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-  $('#logout').on('click',function(){
-    if(confirm('ログアウトしますか？')){
-      event.preventDefault(); document.getElementById('logout-form').submit();
-    }else{
-      return false;
-    }
-});
-</script>
+<script type="text/javascript" src="/js/test.js"></script>
 </body>
 </html>
