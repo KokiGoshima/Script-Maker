@@ -4,7 +4,7 @@
 * {margin: 0; padding: 0;}
 body {
     font-family: arial;
-        background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) no-repeat 87% 76% / 100% 100%,url(../images/pic.jpg);
+    background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) no-repeat 87% 76% / 100% 100%,url(../images/pic.jpg);
 
 }
 
