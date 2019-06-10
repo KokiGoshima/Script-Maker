@@ -47,7 +47,12 @@
                   @else
                   <span style="font-size: 20px;">{{ $script->title }}</span>
                   @endif
-                  <br>{{ $script->content }}
+                  <br>
+                  @if($script->content === Null)
+                  <span style="font-size: 10px;">No Text</span>
+                  @else
+                  {{ $script->content }}
+                  @endif
                 </p>
                {{--  <i class="fa far fa-file-alt fa-file-alt-script" aria-hidden="true"></i> --}}
               </a>
