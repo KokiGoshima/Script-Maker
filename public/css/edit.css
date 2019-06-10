@@ -4,7 +4,7 @@
 * {margin: 0; padding: 0;}
 body {
     font-family: arial;
-    background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) no-repeat 87% 76% / 100% 100%,url(../images/pic.jpg);
+    background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) no-repeat 87% 76% / 100% 100%,url(../images/pic.jpg); */
 
 }
 
@@ -79,9 +79,10 @@ body {
 }
 
 .situations{
-  color: #000;
-  background-color: #6599e0;
+  color: #000000;
+  background-color: #6599e0;;
   margin-bottom : 10px;
+  padding-left:5px;
 }
 
 .phrase{
@@ -90,7 +91,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
@@ -108,7 +109,8 @@ body {
 }
 
 .phrase-button:hover {
-	background: #cccccc;
+  background: #cccccc;
+  border: 1px solid #000000;
 }
 
 
@@ -117,8 +119,12 @@ body {
   height: 580px;
   overflow: auto;
   border: solid 1px #000;
+  background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;
 }
- 
+.title{
+  padding-left:5px;
+}
+
 .topic.current{
   font-weight: bold;
 }
@@ -149,9 +155,15 @@ body {
   margin-bottom : 10px;
 }
 
-.text-tytle{
+.script-title{
+  background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;
+  height:511px;
+}
+
+.text-title{
   width:300px;
   margin-bottom:5px;
+  margin-left:10px;
 }
 
 
