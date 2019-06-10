@@ -12,7 +12,7 @@
 
 
 @section('content')
-<div class="container mt-5">
+<div class="container mt-5 animation">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -74,7 +74,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary animation-link">
                                     {{ __('Register') }}
                                 </button>
                             </div>
@@ -85,4 +85,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
 @endsection
