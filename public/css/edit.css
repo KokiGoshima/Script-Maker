@@ -80,6 +80,7 @@ body {
 
 .situations{
   color: #000000;
+  font-weight: bold;
   background-color: #6599e0;;
   margin-bottom : 10px;
   padding-left:5px;
@@ -118,11 +119,12 @@ body {
   width: 450px;
   height: 580px;
   overflow: auto;
-  border: solid 1px #000;
-  background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;
+  border: solid 1px #000000;
+  /* background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat; */
 }
 .title{
   padding-left:5px;
+  font-weight: bold;
 }
 
 .topic.current{

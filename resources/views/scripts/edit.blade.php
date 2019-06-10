@@ -113,7 +113,7 @@
                   <button type="submit" data-id="{{$script->id}}" onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？')">保存</button>
                       <button type="submit" class="jquery_reset_perfect">クリア</button>
                   </div>
-                  <input class="text-title" type="text" name="title" placeholder="タイトルを入力してください" value = "{{ old('title', $script->title) }}" style="width: 220px;">
+                  <input class="text-title" type="text" name="title" placeholder="タイトルを入力してください" value = "{{ old('title', $script->title) }}">
                   {{-- @if($errors->has('title')) --}}
                   @if($errors->any())
                   <span class = "error" style="color: red;">{{ $errors->first() }}</span>
