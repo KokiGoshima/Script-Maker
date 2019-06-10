@@ -1,6 +1,6 @@
 $(function(){
 
-<<<<<<< HEAD
+
 
   $(document).ready(function(){
     $("#accordianmenu p").click(function(){
