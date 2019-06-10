@@ -84,6 +84,9 @@ body {
   background-color: #6599e0;;
   margin-bottom : 10px;
   padding-left:5px;
+  position:absolute;
+  top:101px;
+  width:448px;
 }
 
 .phrase{
@@ -91,6 +94,7 @@ body {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid #e3e3e3;

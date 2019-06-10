@@ -110,7 +110,7 @@
           <div class="script-title">
                 <p class="title">スクリプト</p>
                   <div class="button-box">
-                  <button type="submit" data-id="{{$script->id}}">保存</button>
+                      <button type="submit" data-id="{{$script->id}}">保存</button>
                       <button type="submit" class="jquery_reset_perfect">クリア</button>
                   </div>
                   <input class="text-title" type="text" name="title" placeholder="タイトルを入力してください" value = "{{ old('title', $script->title) }}">
@@ -191,7 +191,7 @@ $('.jquery_reset_perfect').on('click', function(e){
   e.preventDefault();
   if (confirm('現在のスクリプト内容を全て削除してもよろしいですか？')) {
     $('.scripttext').val('');
-   } 
+   }
 });
 </script>
 
