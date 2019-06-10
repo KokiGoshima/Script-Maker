@@ -110,7 +110,8 @@ body {
 .phrase-button{
   width: 376px;
   text-align: left;
-  padding:3px;
+  padding:5px;
+  font-weight:bold;
 }
 
 .phrase-button:hover {
