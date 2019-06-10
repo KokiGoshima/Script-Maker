@@ -73,7 +73,7 @@ body{background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) n
 }
 
 .carousel-3d-container{
-  height:600px !important;
+  height:500px !important;
 }
 
 
@@ -95,6 +95,9 @@ body{background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) n
   font-size: 100px!important;
 }
 
+.return-script{
+  text-align: center;
+}
 
 
 
