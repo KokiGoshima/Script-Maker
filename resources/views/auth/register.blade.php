@@ -12,7 +12,7 @@
 
 
 @section('content')
-<div class="container mt-5">
+<div class="container mt-5 animation">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -85,4 +85,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
 @endsection
