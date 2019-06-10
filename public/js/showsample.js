@@ -1,4 +1,8 @@
-
+$(function(){
+  $('.example').each(function(i) {
+    $(this).delay(100 * i).show();
+  });
+});
 
 function copy1(){
   //範囲を指定
@@ -12,7 +16,6 @@ function copy1(){
   selection.addRange(range);
 
   //コピー
-  
   document.execCommand('copy');
   alert('コピーしました');
 }
