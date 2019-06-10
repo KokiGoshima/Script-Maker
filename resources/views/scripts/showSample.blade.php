@@ -98,6 +98,9 @@
   </carousel-3d>
 </div>
 
+<div class="return-script">
+  <input type="button" value="&#xf0e2; Scriptへ戻る" onclick="history.back();" class="fas" >
+</div>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
