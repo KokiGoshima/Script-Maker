@@ -1,5 +1,5 @@
 $(function(){
-	$('.animsition-link').on('click',function(){
+	$('.animation-link').on('click',function(){
 		$(".animation").fadeOut(500);
 	});
 });

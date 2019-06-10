@@ -62,7 +62,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4 btn-group-1">
-                                <button type="submit button" class="btn btn-primary">
+                                <button type="submit button" class="btn btn-primary animation-link">
                                     {{ __('Login') }}
                                 </button>
 
