@@ -6,7 +6,7 @@ body {
 }
 
 .card{
-	color: white;
+	color: black;
 	width: 500px;
 	height: 600px;
 	margin: auto;
@@ -15,6 +15,7 @@ body {
 }
 
 .card-header{
+	color: white;
 	font-size: 60px;
 	font-family: 'Anton', sans-serif;
 	text-align: center;
@@ -23,22 +24,14 @@ body {
 	margin-bottom: 20px;
 }
 
-.form-group{
-	opacity: 0.8;
-}
-
 .text-md-right{
 	text-align: left!important;
+	opacity: 0.6;
 }
 
 .offset-md-4{
 	margin-left: 0;
 	padding-left: 0;
-}
-
-.form-check{
-	padding-left: 15px;
-	padding-top: 10px
 }
 
 #remember{
@@ -47,7 +40,6 @@ body {
 }
 
 #name,#email,#password,#password-confirm{
-	/*color: white;*/
 	background-color: transparent;
 	border: none;
 	border-bottom: solid 1px white ;
