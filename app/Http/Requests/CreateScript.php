@@ -24,7 +24,7 @@ class CreateScript extends FormRequest
     public function rules()
     {
         return [
-            // "title" => 'max:30'
+            "title" => 'max:30'
         ];
     }
 
