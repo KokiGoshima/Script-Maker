@@ -164,21 +164,22 @@ body {
 
 
 .title{
-  width:593px;
-  background-color: #6599e0;
+  width:540px;
+  /*background-color: #6599e0;*/
+  border-bottom: solid 1px black;
   float:left;
   margin-bottom : 10px;
 }
 
 .script-title{
-  background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;
+  /*background:url(http://www.thomaspodgro.com/pen/hero-bg.jpg) top left no-repeat;*/
   height:511px;
 }
 
 .text-title{
   width:300px;
   margin-bottom:5px;
-  margin-left:10px;
+  /*margin-left:10px;*/
 }
 
 
@@ -229,7 +230,8 @@ body {
   #script{
     width:550px;
     height:580px;
-    border: solid 1px #000; 
+    /*border: solid 1px #000; */
+    border: none;
 
   }
   
