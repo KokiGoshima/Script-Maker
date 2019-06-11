@@ -25,7 +25,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "会社を代表して、本日皆様を歓迎したいと思います。",
-                "englishSentence" => "On behalf of Company, I would like to welcome you here today. ",
+                "englishSentence" => "On behalf of [Company], I would like to welcome you here today. ",
                 "situation_id" => 1
             ],
             [
