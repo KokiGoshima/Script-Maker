@@ -25,7 +25,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "会社を代表して、本日皆様を歓迎したいと思います。",
-                "englishSentence" => "On behalf of Company I would like to welcome you here today. ",
+                "englishSentence" => "On behalf of Company, I would like to welcome you here today. ",
                 "situation_id" => 1
             ],
             [
@@ -292,7 +292,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "質問は最後に喜んで答えます。",
-                "englishSentence" => "I will be glad to answer any questions that you may have at the end. ",
+                "englishSentence" => "I will be glad to answer any questions that you may have in the end. ",
                 "situation_id" => 8
             ],
             [
@@ -307,7 +307,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "最後にまとめてご質問を受け付けます。",
-                "englishSentence" => "Please hold all questions till the end. ",
+                "englishSentence" => "Please hold all questions until the end. ",
                 "situation_id" => 8
             ],
             [
@@ -399,7 +399,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "過去数年間で、急速に減少しています。",
-                "englishSentence" => "Over the past few years it has decreased very rapidly. ",
+                "englishSentence" => "Over the past few years, it has decreased very rapidly. ",
                 "situation_id" => 10
             ],
             [
@@ -440,7 +440,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "次の「トピック」についてみていこうと思います。",
-                "englishSentence" => "I’d now like to look at next [topic]. ",
+                "englishSentence" => "I’d now like to look at the next [topic]. ",
                 "situation_id" => 11
             ],
             [
@@ -455,7 +455,7 @@ class PhrasesTableSeeder extends Seeder
             ],
             [
                 "japaneseSentence" => "みなさんお分かり頂けたのであれば、次に移ります。",
-                "englishSentence" => "If everyone is clear on that point ,I'll move onto the next. ",
+                "englishSentence" => "If everyone is clear on that point, I'll move onto the next. ",
                 "situation_id" => 11
             ],
             [
@@ -577,7 +577,7 @@ class PhrasesTableSeeder extends Seeder
 // ------------------------------------------------------------------------------------------------------------------------------
             [
                 "japaneseSentence" => "Bと比べて、Aは「AAA」を表しています",
-                "englishSentence" => "In contrast to B , A shows [AAA]. ",
+                "englishSentence" => "In contrast to B, A shows [AAA]. ",
                 "situation_id" => 18
             ],
 // ------------------------------------------------------------------------------------------------------------------------------
@@ -674,18 +674,13 @@ class PhrasesTableSeeder extends Seeder
                 "situation_id" => 21
             ],
             [
-                "japaneseSentence" => "次のポイントを指摘することで結論としたいと思います。",
-                "englishSentence" => "I’d like to conclude by making following points. ",
-                "situation_id" => 21
-            ],
-            [
                 "japaneseSentence" => "最後にカギとなるポイントを再度お話しして終わりたいと思います。",
                 "englishSentence" => "I’d like to finish by restating the key issue. ",
                 "situation_id" => 21
             ],
             [
                 "japaneseSentence" => "次のポイントを指摘することで結論としたいと思います。",
-                "englishSentence" => "I’d like to conclude by making following points. ",
+                "englishSentence" => "I’d like to conclude by making the following points. ",
                 "situation_id" => 21
             ],
             [
