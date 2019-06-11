@@ -55,18 +55,19 @@
     <!-- 挨拶 -->
   <div class="scrollvar topic_item current">
 
-    <p class="situations">{{ $constructions->find(1)->flow }} > {{ $situations->find(1)->pattern }}</p>
+    <p class="situations">{{ $constructions->find(1)->flow }} > {{ $situations->find(1)->pattern }}</p><br>
 
+      <div class="phrases-box">
 
-    @foreach($situations->find(1)->phrases as $phrase)
-      <div class="phrase">
-        <div class="phrase-item">
-              <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
-                {{ $phrase->japaneseSentence }}</button>
-        </div>
+        @foreach($situations->find(1)->phrases as $phrase)
+          <div class="phrase">
+            <div class="phrase-item">
+                  <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
+                    {{ $phrase->japaneseSentence }}</button>
+            </div>
+          </div>
+        @endforeach
       </div>
-    @endforeach
-
   </div>
 
   @for($i = 1; $i <= $constructions->count(); $i++)
@@ -81,8 +82,9 @@
 
     <div class="scrollvar topic_item">
 
-        <p class="situations">{{ $constructions->find($i)->flow }} > {{ $situations->find($j)->pattern }}</p>
+        <p class="situations">{{ $constructions->find($i)->flow }} > {{ $situations->find($j)->pattern }}</p><br>
 
+      <div class="phrases-box">
       @foreach($situations->find($j)->phrases as $phrase)
         <div class="phrase">
           <div class="phrase-item">
@@ -91,7 +93,7 @@
           </div>
         </div>
       @endforeach
-
+      </div>
     </div>
     @endfor
 
