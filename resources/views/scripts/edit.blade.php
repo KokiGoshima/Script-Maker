@@ -16,18 +16,32 @@
 <body>
 {{--  アコーディオン機能 --}}
 <div id="container">
+
   <div id="accordianmenu">
     <ul>
-           @foreach ($constructions as $construction) 
-            <li class="active">
-                <p>{{ $construction->flow }}</p>
-            <ul>
-            @foreach($construction->situations as $v) 
-                 <li><a class="topic current">{{ $v->pattern }}</a></li>
-            @endforeach
-            </ul>
-            </li>
-            @endforeach
+      <li class="active">
+          <p>{{ $constructions->first()->flow }}</p>
+      <ul>
+      @foreach($constructions->first()->situations as $v) 
+           <li><a class="topic current">{{ $v->pattern }}</a></li>
+      @endforeach
+      </ul>
+      </li>
+
+     @foreach ($constructions as $construction)
+      @if ($loop->index === 0)
+        <?php continue; ?>
+      @endif
+ 
+      <li>
+          <p>{{ $construction->flow }}</p>
+      <ul>
+      @foreach($construction->situations as $v) 
+           <li><a class="topic current">{{ $v->pattern }}</a></li>
+      @endforeach
+      </ul>
+      </li>
+      @endforeach
     </ul>
   </div>
 
