@@ -83,7 +83,7 @@
   @for($i = $constructions->first()->id; $i <= $constructions->last()->id; $i++)
 
     @if($i == $constructions->first()->id)
-    <?php $a = 2; $b = 0;?>
+    <?php $a = $constructions->first()->id +1; $b = 0;?>
     @else
     <?php $a = $j; $b = $j - 1; ?>
     @endif

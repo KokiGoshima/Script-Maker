@@ -44,7 +44,7 @@ class ScriptController extends Controller
         //         echo $v->pattern;
         //     }
         // }
-        // dd(123);
+        // dd($constructions->last()->id);
 
 
     	return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
