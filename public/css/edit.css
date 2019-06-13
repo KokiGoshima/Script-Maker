@@ -225,6 +225,12 @@ body {
 
   }
   
+  .title{
+    width:540px;
+    background-color: #6599e0;
+    float:left;
+    margin-bottom : 10px;
+  }
   
   
   .stytle{
@@ -255,7 +261,7 @@ body {
   
   .scripttext{
     width:540px;
-    height: 520px;
+    height: 511px;
     background-image:
       repeating-linear-gradient(
         #fff,
