@@ -12,9 +12,12 @@ use App\Phrase;
 
 class ScriptController extends Controller
 {
+    
     public function index(){
         // $scripts = Script::all()->orderBy("created_at", "desc");
         $scripts = Script::where("user_id", Auth::user()->id)->orderBy("created_at", "desc")->get();
+        // $user = Auth::user();
+        // dd($user->name);
         // $scripts = Auth::user()->scripts;
 
         // dd($scripts);

@@ -47,6 +47,8 @@
         <a href="{{ url('/scripts') }}">Script Maker</a>
         </div>
         <ul class="clearfix icon">
+          <li><a class="container" href="#" ><span>{{ Auth::user()->name }}さん</span></a></li>
+
           <li>
 
             <a class="container" id="logout" href="{{ route('logout') }}" ><i class="fas fa-sign-out-alt"></i><span>ログアウト</span></a>
