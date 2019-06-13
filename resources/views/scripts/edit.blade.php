@@ -16,34 +16,36 @@
 <body>
 {{--  アコーディオン機能 --}}
 <div id="container">
+
   <div id="accordianmenu">
     <ul>
-        <li class="active">
-            <p>導入</p>
-            <ul>
-              @foreach($constructions->find(1)->situations as $situation)
-                <li><a class="topic current">{{ $situation->pattern }}</a></li>
-              @endforeach
-            </ul>
-        </li>
-        <li>
-            <p>本論</p>
-            <ul>
-              @foreach($constructions->find(2)->situations as $situation)
-                <li><a class="topic">{{ $situation->pattern }}</a></li>
-              @endforeach
-            </ul>
-        </li>
-        <li>
-            <p>結論</p>
-            <ul>
-              @foreach($constructions->find(3)->situations as $situation)
-                <li><a class="topic">{{ $situation->pattern }}</a></li>
-              @endforeach
-            </ul>
-        </li>
+      <li class="active">
+          <p>{{ $constructions->first()->flow }}</p>
+      <ul>
+      @foreach($constructions->first()->situations as $v) 
+           <li><a class="topic current">{{ $v->pattern }}</a></li>
+      @endforeach
+      </ul>
+      </li>
+
+     @foreach ($constructions as $construction)
+      @if ($loop->index === 0)
+        <?php continue; ?>
+      @endif
+ 
+      <li>
+          <p>{{ $construction->flow }}</p>
+      <ul>
+      @foreach($construction->situations as $v) 
+           <li><a class="topic current">{{ $v->pattern }}</a></li>
+      @endforeach
+      </ul>
+      </li>
+      @endforeach
     </ul>
   </div>
+
+
 
 
 
@@ -55,10 +57,10 @@
     <!-- 挨拶 -->
   <div class="scrollvar topic_item current">
 
-    <p class="situations">{{ $constructions->find(1)->flow }} > {{ $situations->find(1)->pattern }}</p>
+    <p class="situations">{{ $constructions->first()->flow }} > {{ $situations->first()->pattern }}</p>
 
 
-    @foreach($situations->find(1)->phrases as $phrase)
+    @foreach($situations->first()->phrases as $phrase)
       <div class="phrase">
         <div class="phrase-item">
               <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
@@ -69,21 +71,26 @@
 
   </div>
 
-  @for($i = 1; $i <= $constructions->count(); $i++)
+  
+ 
+    @foreach($constructions as $construction)
+      @if ($loop->index === 0)
+        <?php $flag = 0; ?>
+        @else
+        <?php $flag = 1; ?>        
+      @endif
 
-    @if($i == 1)
-    <?php $a = 2; $b = 0;?>
-    @else
-    <?php $a = $j; $b = $j - 1; ?>
-    @endif
+    @foreach($construction->situations as $situation)
+      @if ($flag === 0  && $loop->index === 0)
+        <? continue; ?>
+      @endif
 
-    @for($j = $a; $j <= $situations->where("construction_id", $i)->count() + $b; $j++)
 
     <div class="scrollvar topic_item">
 
-        <p class="situations">{{ $constructions->find($i)->flow }} > {{ $situations->find($j)->pattern }}</p>
+        <p class="situations">{{ $construction->flow }} > {{ $situation->pattern }}</p>
 
-      @foreach($situations->find($j)->phrases as $phrase)
+      @foreach($situation->phrases as $phrase)
         <div class="phrase">
           <div class="phrase-item">
                 <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
@@ -93,9 +100,9 @@
       @endforeach
 
     </div>
-    @endfor
+    @endforeach
 
-  @endfor
+  @endforeach
 
 
 
