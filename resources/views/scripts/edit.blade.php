@@ -66,10 +66,10 @@
     <!-- 挨拶 -->
   <div class="scrollvar topic_item current">
 
-    <p class="situations">{{ $constructions->find(1)->flow }} > {{ $situations->find(1)->pattern }}</p>
+    <p class="situations">{{ $constructions->first()->flow }} > {{ $situations->first()->pattern }}</p>
 
 
-    @foreach($situations->find(1)->phrases as $phrase)
+    @foreach($situations->first()->phrases as $phrase)
       <div class="phrase">
         <div class="phrase-item">
               <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
