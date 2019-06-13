@@ -32,12 +32,20 @@ class ScriptController extends Controller
 
     public function edit($id){
 
-        $constructions = Construction::all();
-        $situations = Situation::all();
+        $constructions = Construction::with('situations')->get();
+        // $situations = Situation::all();
+        $situations = Situation::with("phrases")->get();
         $phrases = Phrase::all();
         $script = Script::find($id);
 
-        dd($constructions, $situations, $script);
+        // foreach ($constructions as $construction) {
+        //     echo $construction->flow;
+        //     foreach($construction->situations as $v) {
+        //         echo $v->pattern;
+        //     }
+        // }
+        // dd(123);
+
 
     	return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
     }

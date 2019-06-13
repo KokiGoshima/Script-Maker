@@ -18,15 +18,24 @@
 <div id="container">
   <div id="accordianmenu">
     <ul>
-        <li class="active">
-            <p>導入</p>
+           @foreach ($constructions as $construction) 
+            <li class="active">
+                <p>{{ $construction->flow }}</p>
+            <ul>
+            @foreach($construction->situations as $v) 
+                 <li><a class="topic current">{{ $v->pattern }}</a></li>
+            @endforeach
+            </ul>
+            </li>
+            @endforeach
+
+            {{-- <p>導入</p>
             <ul>
               @foreach($constructions->find(1)->situations as $situation)
                 <li><a class="topic current">{{ $situation->pattern }}</a></li>
               @endforeach
-            </ul>
-        </li>
-        <li>
+            </ul> --}}
+        {{-- <li>
             <p>本論</p>
             <ul>
               @foreach($constructions->find(2)->situations as $situation)
@@ -41,9 +50,11 @@
                 <li><a class="topic">{{ $situation->pattern }}</a></li>
               @endforeach
             </ul>
-        </li>
+        </li> --}}
     </ul>
   </div>
+
+
 
 
 
