@@ -31,6 +31,7 @@ class ScriptController extends Controller
     }
 
     public function edit($id){
+        dd(123);
         $constructions = Construction::all();
         $situations = Situation::all();
         $phrases = Phrase::all();
