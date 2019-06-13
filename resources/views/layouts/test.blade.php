@@ -47,7 +47,7 @@
         <a href="{{ url('/scripts') }}">Script Maker</a>
         </div>
         <ul class="clearfix icon">
-          <li><a class="container" href="#" ><span>{{ Auth::user()->name }}さん</span></a></li>
+          <li><p class="container" href="#" style="padding-left: 40px;"><i class="far fa-user"></i><span>{{ Auth::user()->name }}さん</span></p></li>
 
           <li>
 
