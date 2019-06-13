@@ -80,9 +80,9 @@
 
   </div>
 
-  @for($i = 1; $i <= $constructions->count(); $i++)
+  @for($i = $constructions->first()->id; $i <= $constructions->last()->id; $i++)
 
-    @if($i == 1)
+    @if($i == $constructions->first()->id)
     <?php $a = 2; $b = 0;?>
     @else
     <?php $a = $j; $b = $j - 1; ?>
