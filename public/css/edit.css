@@ -8,6 +8,11 @@ body {
 
 }
 
+#contents{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #container{
   display: flex;
   align-items: flex-start;
@@ -214,7 +219,7 @@ body {
 @media screen and (max-width:1280px) {
 
   header ul{
-    width: 1200px;
+    width: 1300px;
   }
 
 

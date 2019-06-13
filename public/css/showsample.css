@@ -5,6 +5,11 @@ body{background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) n
   display:none;
 }
 
+#contents{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .copy{
   text-align: right;
 }
