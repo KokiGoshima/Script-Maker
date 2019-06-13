@@ -28,29 +28,6 @@
             </ul>
             </li>
             @endforeach
-
-            {{-- <p>導入</p>
-            <ul>
-              @foreach($constructions->find(1)->situations as $situation)
-                <li><a class="topic current">{{ $situation->pattern }}</a></li>
-              @endforeach
-            </ul> --}}
-        {{-- <li>
-            <p>本論</p>
-            <ul>
-              @foreach($constructions->find(2)->situations as $situation)
-                <li><a class="topic">{{ $situation->pattern }}</a></li>
-              @endforeach
-            </ul>
-        </li>
-        <li>
-            <p>結論</p>
-            <ul>
-              @foreach($constructions->find(3)->situations as $situation)
-                <li><a class="topic">{{ $situation->pattern }}</a></li>
-              @endforeach
-            </ul>
-        </li> --}}
     </ul>
   </div>
 
@@ -80,21 +57,20 @@
 
   </div>
 
-  @for($i = $constructions->first()->id; $i <= $constructions->last()->id; $i++)
-
-    @if($i == $constructions->first()->id)
-    <?php $a = $constructions->first()->id +1; $b = 0;?>
-    @else
-    <?php $a = $j; $b = $j - 1; ?>
+  
+ 
+    @foreach($constructions as $construction)
+    @foreach($construction->situations as $situation)
+    @if ($loop->index === 0)
+      <? continue; ?>
     @endif
 
-    @for($j = $a; $j <= $situations->where("construction_id", $i)->count() + $b; $j++)
 
     <div class="scrollvar topic_item">
 
-        <p class="situations">{{ $constructions->find($i)->flow }} > {{ $situations->find($j)->pattern }}</p>
+        <p class="situations">{{ $construction->flow }} > {{ $situation->pattern }}</p>
 
-      @foreach($situations->find($j)->phrases as $phrase)
+      @foreach($situation->phrases as $phrase)
         <div class="phrase">
           <div class="phrase-item">
                 <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
@@ -104,9 +80,9 @@
       @endforeach
 
     </div>
-    @endfor
+    @endforeach
 
-  @endfor
+  @endforeach
 
 
 

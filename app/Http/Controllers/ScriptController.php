@@ -33,6 +33,7 @@ class ScriptController extends Controller
     public function edit($id){
 
         $constructions = Construction::with('situations')->get();
+        // dd($constructions);
         // $situations = Situation::all();
         $situations = Situation::with("phrases")->get();
         $phrases = Phrase::all();
@@ -44,7 +45,7 @@ class ScriptController extends Controller
         //         echo $v->pattern;
         //     }
         // }
-        // dd($constructions->last()->id);
+        // dd($constructions->count());
 
 
     	return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
