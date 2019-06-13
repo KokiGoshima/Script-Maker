@@ -8,6 +8,11 @@ body {
 
 }
 
+#contents{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #container{
   display: flex;
   align-items: flex-start;
