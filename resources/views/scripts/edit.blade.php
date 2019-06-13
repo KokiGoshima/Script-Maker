@@ -60,10 +60,16 @@
   
  
     @foreach($constructions as $construction)
+      @if ($loop->index === 0)
+        <?php $flag = 0; ?>
+        @else
+        <?php $flag = 1; ?>        
+      @endif
+
     @foreach($construction->situations as $situation)
-    @if ($loop->index === 0)
-      <? continue; ?>
-    @endif
+      @if ($flag === 0  && $loop->index === 0)
+        <? continue; ?>
+      @endif
 
 
     <div class="scrollvar topic_item">
