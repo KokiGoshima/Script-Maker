@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{asset('css/test.css')}}">
     <link rel="stylesheet" href="{{asset('css/reset.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{{ asset('img/emblemmatic-s-logo-438.ico') }}">
 
     @yield("howtoCss")
     @yield("indexCss")
@@ -54,7 +55,7 @@
               @csrf
             </form>
           </li>
-          <li><a class="container" href="{{ route('scripts.index') }}" ><i class="fas fa-folder"></i><span>マイスクリプト</span></a></li>
+          <li><a class="container my-script" href="{{ route('scripts.index') }}" ><i class="fas fa-folder"></i><span>マイスクリプト</span></a></li>
           <li><a class="container" href="{{ route('scripts.sample') }}" ><i class="fas fa-book-reader"></i><span>完成例一覧</span></a></li>
         </ul>
       @endguest

@@ -82,5 +82,17 @@ $(function(){
   });
 
 
+
+// onclick="return confirm('現在のスクリプト内容を保存してもよろしいですか？')"
+
+  $('.my-script').on('click',function(){
+    if(confirm('保存されていない内容は削除されますが移動してもよろしいですか？')){
+      return true;
+    }else{
+      return false;
+    }
+  })
+
+
 })
 
