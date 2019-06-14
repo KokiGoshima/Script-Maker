@@ -55,7 +55,7 @@
               @csrf
             </form>
           </li>
-          <li><a class="container" href="{{ route('scripts.index') }}" ><i class="fas fa-folder"></i><span>マイスクリプト</span></a></li>
+          <li><a class="container my-script" href="{{ route('scripts.index') }}" ><i class="fas fa-folder"></i><span>マイスクリプト</span></a></li>
           <li><a class="container" href="{{ route('scripts.sample') }}" ><i class="fas fa-book-reader"></i><span>完成例一覧</span></a></li>
         </ul>
       @endguest
