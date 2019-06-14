@@ -28,7 +28,7 @@ $(function(){
   // テキストエリア 
 
   // function addTF(str) {
-  $(".phrase-button").on("click", function(str) {
+  $(".phrase-button").on("click", function() {
   //テキストエリア取得
   let textarea = document.scriptForm.textbox;
   // テキストエリアの文字列を取得
@@ -42,6 +42,8 @@ $(function(){
   //カーソルのあとの文字列を取得
   let after = sentence.substr(pos, len);
   // (str)文字を追加
+  let str = $(this).val();
+  
   return document.scriptForm.textbox.value = before + str + after;
   });
 
