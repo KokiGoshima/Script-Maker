@@ -61,7 +61,7 @@
     @foreach($situations->find(1)->phrases as $phrase)
       <div class="phrase">
         <div class="phrase-item">
-              <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
+              <button class="phrase-button" type="button" name="phrase" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
                 {{ $phrase->japaneseSentence }}</button>
         </div>
       </div>
@@ -86,7 +86,7 @@
       @foreach($situations->find($j)->phrases as $phrase)
         <div class="phrase">
           <div class="phrase-item">
-                <button class="phrase-button" type="button" name="phrase" onClick="addTF(this.value)" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
+                <button class="phrase-button" type="button" name="phrase" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
                   {{ $phrase->japaneseSentence }}</button>
           </div>
         </div>
