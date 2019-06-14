@@ -21,7 +21,7 @@
 					</div>
 	 		</div>
 	  	<div class="presentationimg">
-					<img src="{{asset('img/presentation.jpeg')}}"  alt="画面説明">
+					<img src="{{asset('img/presentation.png')}}"  alt="画面説明">
 	 	　 </div>
 　</div>
 
