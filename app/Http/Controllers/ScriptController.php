@@ -33,15 +33,23 @@ class ScriptController extends Controller
     public function edit($id){
 
         $constructions = Construction::with('situations')->get();
+        // $constructions = Construction::with('situations');
+        // $constructions = new Construction;
         // dd($constructions);
         // $situations = Situation::all();
-        $situations = Situation::with("phrases")->get();
-        $phrases = Phrase::all();
+        // $situations = Situation::with("phrases");
+        // $phrases = Phrase::all();
         $script = Script::find($id);
+        // dd($constructions);
+        // dd($constructions[0]);
+        // dd($constructions[0]->situations->first());
+        // dd($constructions[0]->situations->toArray()[0]);
+        // dd($constructions[0]->situations);
+        // dd($constructions[0]->situations[0]->phrases);
 
 
-
-    	return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
+    	// return view("scripts.edit", ["script" => $script, "constructions" => $constructions, "situations" => $situations, "phrases" => $phrases]);
+        return view("scripts.edit", ["script" => $script, "constructions" => $constructions]);
     }
 
     public function update($id, CreateScript $request){
