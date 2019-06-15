@@ -21,7 +21,6 @@
     <ul>
       <li class="active">
           <p>{{ $constructions->first()->flow }}</p>
-          {{-- <p>{{ dd($constructions->first()->flow) }}</p> --}}
       <ul>
       @foreach($constructions[0]->situations as $v) 
            <li><a class="topic current">{{ $v->pattern }}</a></li>
@@ -125,7 +124,6 @@
                       <button type="submit" class="jquery_reset_perfect">クリア</button>
                   </div>
                   <input class="text-title" type="text" name="title" placeholder="タイトルを入力してください" value = "{{ old('title', $script->title) }}">
-                  {{-- @if($errors->has('title')) --}}
                   @if($errors->any())
                   <span class = "error" style="color: red;">{{ $errors->first() }}</span>
                   @endif
