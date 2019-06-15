@@ -3,21 +3,17 @@ header{
     z-index:24;
 }
 
-/*文字とドラック＆画像*/
 .main-contents{
-    padding-top: 100px;
-    padding-bottom:100px;
-    padding-right: 60px;
-    padding-left: 100px;
     background: linear-gradient(180deg, #9CB6FF 0%, rgba(203,215,246,0) 100%) no-repeat 87% 76% / 100% 100%,url(../images/pic.jpg);
     background-size:cover;
+    padding: 100px 100px 100px 60px;
 }
 
 /*文字の部分全体*/
 .content{
     float: left;
-    width: 50%;
     margin-top: 200px;
+    width: 50%;
 }
 /*太文字部分*/
 .about-content{
@@ -42,21 +38,21 @@ to {
 }
 
 .presentationimg{
-padding-top: 100px;
+    padding-top: 100px;
 }
 
 .presentationimg img{
-border-radius: 50%;
-height: 500px;
-width: 500px;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
 }
 
 
 /*bootsnipp  css*/
 .how-section1{
+    color: #C40014;
     margin-top:-15%;
     padding: 10%;
-    color: #C40014;
 }
 
 .how-section1 h4{
@@ -80,8 +76,8 @@ width: 500px;
 }
 
 .how-img img{
-    width: 100%;
     height: 100%;
+    width: 100%;
 
 }
 
