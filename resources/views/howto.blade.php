@@ -12,20 +12,20 @@
 
 @section("content")
 	 <div class="main-contents">
-			　   <div class="content">
-					　   <div class="about-content">
-					　　    <h2>初心者からできる<br>英語プレゼンテーションスクリプト作成</h2>
-					　   </div>
-	  			　   <div class="about2-content">
-						　   <p>英語でのプレゼンテーションも怖くない。<br>Script  Makerでやってみよう。
-							   <br> 初心者・ビジネス向け　英語プレゼンテーションスクリプト作成サイト。</p>
-					　   </div>
-	 		　   </div>
+			   <div class="content">
+					   <div class="about-content">
+					     <h2>初心者からできる<br>英語プレゼンテーションスクリプト作成</h2>
+					   </div>
+	  			   <div class="about2-content">
+						   <p>英語でのプレゼンテーションも怖くない。<br>Script  Makerでやってみよう。
+							 <br> 初心者・ビジネス向け　英語プレゼンテーションスクリプト作成サイト。</p>
+					   </div>
+	 		   </div>
 
-	  	　   <div class="presentationimg">
+	  	   <div class="presentationimg">
 					  <img src="{{asset('img/presentation.png')}}"  alt="画面説明">
-	 	　    </div>
- 　</div>
+	      </div>
+ </div>
 
 	<div class="how-section1">
 
