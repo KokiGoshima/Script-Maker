@@ -22,7 +22,7 @@
       <li class="active">
           <p>{{ $constructions->first()->flow }}</p>
       <ul>
-      @foreach($constructions->first()->situations as $v) 
+      @foreach($constructions[0]->situations as $v) 
            <li><a class="topic current">{{ $v->pattern }}</a></li>
       @endforeach
       </ul>
@@ -57,10 +57,10 @@
     <!-- 挨拶 -->
   <div class="scrollvar topic_item current">
 
-    <p class="situations">{{ $constructions->first()->flow }} > {{ $situations->first()->pattern }}</p>
+    <p class="situations">{{ $constructions->first()->flow }} > {{ $constructions[0]->situations->first()->pattern }}</p>
 
 
-    @foreach($situations->first()->phrases as $phrase)
+    @foreach($constructions[0]->situations->first()->phrases as $phrase)
       <div class="phrase">
         <div class="phrase-item">
               <button class="phrase-button" type="button" name="phrase" value="{{ $phrase->englishSentence }}">{{ $phrase->englishSentence }}<br>
@@ -107,6 +107,7 @@
 
 
   </div>
+   
 
 
   {{-- テキスト画面  --}}
@@ -123,7 +124,6 @@
                       <button type="submit" class="jquery_reset_perfect">クリア</button>
                   </div>
                   <input class="text-title" type="text" name="title" placeholder="タイトルを入力してください" value = "{{ old('title', $script->title) }}">
-                  {{-- @if($errors->has('title')) --}}
                   @if($errors->any())
                   <span class = "error" style="color: red;">{{ $errors->first() }}</span>
                   @endif
