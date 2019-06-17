@@ -111,7 +111,7 @@
 </div>
 
 <div class="return-script">
-  <input type="button" value="&#xf0e2; Scriptへ戻る" onclick="history.back();" class="fas" >
+  <input type="button" value="&#xf0e2; 戻る" onclick="history.back();" class="fas" >
 </div>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
