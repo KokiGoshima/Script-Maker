@@ -45,7 +45,7 @@
 						  <p class="text-muted">プレゼンシーンに応じたスクリプト完成例を用意。完成をイメージしながらスクリプトを作成。</p>
 					</div>
 					<div class="col-md-6 how-img">
-							<img src="{{asset('img/sample.png')}}"  alt=""/>
+							<img src="{{asset('img/showsample.png')}}"  alt=""/>
 					</div>
 				</div>
 
