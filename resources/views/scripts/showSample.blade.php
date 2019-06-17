@@ -79,7 +79,7 @@
       </div>
     </slide>
 
-    <slide :index="3">
+    {{-- <slide :index="3">
       <div class="example">
         <div class="copy">
           <button class="btn btn-outline-primary" onclick="copy4()"><i class="far fa-copy"></i>全英文コピー</button>
@@ -105,7 +105,7 @@
       みなさんこんにちは.......
     </div>
   </div>
-</slide>
+</slide> --}}
 
   </carousel-3d>
 </div>
