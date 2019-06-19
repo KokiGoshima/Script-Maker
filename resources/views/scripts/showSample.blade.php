@@ -53,6 +53,7 @@
         <div class="copy">
           <button class="btn btn-outline-primary" onclick="copy3()"><i class="far fa-copy"></i>全英文コピー</button>
         </div>
+
         <div class="title">小学校に英語教育は必要ない</div>
         <span id="english-script3">According to some data, a lot of parents try to make their children learn English as easy as possible. They want their children to become international players. The Japanese government has the same idea. This is a new education system which will start in 2020. Now, in elementary school, English education starts from when students are in fifth grade. From 2020, they will start it when they are in third grade.
 
@@ -75,6 +76,29 @@
           ２つ目の理由は、1週間に2つの授業は不十分だからです。生徒は毎日様々な授業があります。結果として学んだことをすぐに忘れてしまいます。１つの例を紹介します。彼女は小学一年生の頃から英語を学んできました。彼女は週2時間の英語の授業がありました。彼女が中学生になった時どうなったでしょうか？実際他の生徒より成績は優秀でした。しかし、そんな素晴らしい時間も長くは続きませんでした。他の生徒との差は次第になくなっていきました。そして、ついにその差はなくなりました。小学校での英語教育は何の意味も為しませんでした。
 
           英語が世界の共通言語になりつつあるのは知っています。なので日本の子供たちは英語を学ぶ必要があります。これは１つの現実です。しかし私たちは考えなければならない、さらに大切なことがあります。言語はアイデンティティの形成に深く関わっています。日本語を多く学びたくさんのことについて考えることはとても大切なことです。もし子供たちがこの過程を無視し英語を学んでしまったら彼らは日本語と英語を喋るようにプログラムされただけのロボットのようになってしまいます。つまり私の言いたいことは、あなたの言語を殺すなということです。
+
+        <div class="title">会社説明会</div>
+        <span id="english-script3">Good afternoon ladies and gentlemen. Welcome to company  information session. On behalf of XXX, I would like to welcome you here today.  My talk will be in three parts.  First is company's outline. Second is corporate philosophy. Third is Recruitment information. Now let's begin.    
+    First, I will talk about company's outline. Our company  is engineering and English teaching school. In engineering class, we teach programming. Students finally can  learn how to make an application in  our  class. In English class,  students learn all skills English. All teachers are talented at teaching English. By learning these two things, students can have a skill to work in other countries.
+    Second, corporate philosophy. We really want as many people as to make triggers to work in foreign countries. This is because we think Japanese have not contribute to worlds even though they have much potential to do it. We want to help them to take one step.
+    Third, Recruitment information. We are looking for such human resources like them
+1. Who is interested in teaching
+2. Who want to experience challenging work in foreign countries
+3. Who is always eager to meet new people.
+If even one applies to you, you have chance to join us. If you get interested in our company, please mail here.
+    We are coming to the end of today’s presentation.  If you have any questions, I’d be happy to answer them. Thank you.</span>
+        <br>
+        <div class="japanese-script">
+          みなさんこんにちは。本日は私たちの会社説明会へようこそ。弊社XXXを代表して、本日皆様を歓迎したいと思います。私の話は主に三つで構成されます。一つ目が会社概要。二つ目が企業理念。三つ目が採用情報です。では始めましょう。
+          まず、会社概要についてお話したいと思います。私たちの会社はエンジニアと英語を教えることを軸としています。エンジニアクラスでは、プログラミングを教えています。生徒たちは最終的にどのように一つのアプリケーションを作るのかを学びます。英語クラスでは、英語スキルにおけるすべてのスキルを学びます。先生は全員経験のある先生たちで成り立っています。プログラミングと英語の二つを学ぶことで、生徒は海外でも働けるようなスキルを手にいれることができます。
+          次に、企業理念についてです。私たちは出来るだけ多くの生徒に世界で活躍する場を提供したいと心から願っております。なぜなら、日本人は世界に貢献できるほどの素質が備わっているにも関わらずそれをまだ活かしきれていないと考えるからです。私たちは彼らに一歩踏み出せるように背中を押してあげたいと考えています。
+          三つ目が、採用情報についてです。私たちが必要としている人材は次のような人です
+          1. 教えることに興味がある人
+          2. 海外で大きいチャレンジを成し遂げたい人
+          3. 常に誰か新しい人に会うことを望んでいる人
+          もしこれらどれかに一つでも当てはまっていれば応募する資格があります。少しでも興味があれば、こちらまでメールをお願い致します。
+          これで発表を終わります。もし質問があれば、喜んでお答え致します。ありがとうございました。
+
         </div>
       </div>
     </slide>
@@ -111,7 +135,7 @@
 </div>
 
 <div class="return-script">
-  <input type="button" value="&#xf0e2; Scriptへ戻る" onclick="history.back();" class="fas" >
+  <input type="button" value="&#xf0e2; 戻る" onclick="history.back();" class="fas" >
 </div>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
