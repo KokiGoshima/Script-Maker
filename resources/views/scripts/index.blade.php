@@ -43,9 +43,9 @@
               <a href="{{ route('scripts.edit', ['id' => $script->id]) }}">
                 <p>
                   @if($script->title === Null)
-                  <span style="font-size: 20px;">No Title</span>
+                  <span style="font-size: 20px; line-height: 2;">No Title</span>
                   @else
-                  <span style="font-size: 20px;">{{ $script->title }}</span>
+                  <span style="font-size: 16px; line-height: 2;">{{ $script->title }}</span>
                   @endif
                   <br>
                   @if($script->content === Null)

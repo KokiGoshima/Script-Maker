@@ -21,28 +21,11 @@
         <div class="copy">
           <button class="btn btn-outline-primary"onclick="copy1()"><i class="far fa-copy"></i>全英文コピー</button>
         </div>
-        <div class="title">小学校に英語教育は必要ない</div>
-        <span id="english-script1">According to some data, a lot of parents try to make their children learn English as easy as possible. They want their children to become international players. The Japanese government has the same idea. This is a new education system which will start in 2020. Now, in elementary school, English education starts from when students are in fifth grade. From 2020, they will start it when they are in third grade.
-
-        In my opinion, English education in elementary school is not necessary. There are some reasons, today, I’ll tell you two reasons.
-
-        First of all, whenever you start studying English, actuary, age doesn’t matter. Many people believe that children had better study English as early as possible because they have flexible brains so that they can get knowledge or information easily. However, it is not true. I’ll show you an experiment called BAF project which lasted from 1995 to 2004. The subjects are of different ages who never studied English. They study English for the same hours and take some same tests at each period. How was it? The 8 years old group was the highest? The result is that older groups always get higher grades than younger groups. This experiment shows that age doesn’t matter. The degree of English skill depends on learning time. It’s never too late to start studying English. So that’s one reason.
-
-        Second reason
-        Two classes a week are not enough to study English. Students have several different classes every day. Under the only two classes, they easily forget what they learn. Let me give you one example. A girl who has studied English since she was in the first grade of an elementary school. She had 2 English classes a week in an elementary school. What happened to her when she was in junior high school. Actuary, her English grade was better than others. However, the wonderful times didn’t last too long. The gap between her and others was gradually closed. And finally, there were no differences. Studying English at an elementary school is good for nothing. It won’t help with anything.
-
-        I know English is on its way to becoming the world’s universal language. Japanese children should learn English. This is one reality. But we have another more important reality that we ought to think about. The language is deeply connected to forming a personal identity. Learning a lot of Japanese vocabulary and thinking a lot of things with the vocabulary is very important. If children ignore that process and learn English, they will be like a robot just speak Japanese and English. So I wwant to say is that do not kill your language.</span>
+        <div class="title">タイトル</div>
+        <span id="english-script1">hello, world</span>
         <br>
         <div class="japanese-script">
-          ある統計によると、たくさんの親が早い時期から子供に英語教育をさせようとしています。彼らは子供を世界で活躍できる人材にしたいと考えています。日本政府も同じ考えを持っています。これは2020年から始まる新しい教育システムです。現在、小学校では英語の授業は小学5年生から始まっています。2020年からは小学3年生から始まる予定です。
-
-          私の意見では、小学校の英語教育は必要ないと考えています。いくつかが理由はありますが、今日は２つご紹介します。
-
-          １つ目は、いつ勉強を始めても年齢は関係ないということです。多くの人が、子供は柔軟な脳を持っているので知識や情報を取得しやすい為、できるだけ早めに英語の勉強を始めた方がいいと考えてます。しかし、それは正しくありません。1995年から2004年まで続いたBAFという実験を紹介します。被験者は年齢が異なる英語を勉強したことがない人です。彼らは同じ時間英語を勉強し、それぞれの期間に同じテストを受けました。いったい誰が一番高い点数をとったと思いますか？8歳のグループですか？結果は、年長グループが常に燃焼グループよ高い点数を取りました。英語の習熟度は勉強時間に比例します。つまり英語の勉強を始めるのに遅すぎることはありません。これが1つ目の理由です。
-
-          ２つ目の理由は、1週間に2つの授業は不十分だからです。生徒は毎日様々な授業があります。結果として学んだことをすぐに忘れてしまいます。１つの例を紹介します。彼女は小学一年生の頃から英語を学んできました。彼女は週2時間の英語の授業がありました。彼女が中学生になった時どうなったでしょうか？実際他の生徒より成績は優秀でした。しかし、そんな素晴らしい時間も長くは続きませんでした。他の生徒との差は次第になくなっていきました。そして、ついにその差はなくなりました。小学校での英語教育は何の意味も為しませんでした。
-
-          英語が世界の共通言語になりつつあるのは知っています。なので日本の子供たちは英語を学ぶ必要があります。これは１つの現実です。しかし私たちは考えなければならない、さらに大切なことがあります。言語はアイデンティティの形成に深く関わっています。日本語を多く学びたくさんのことについて考えることはとても大切なことです。もし子供たちがこの過程を無視し英語を学んでしまったら彼らは日本語と英語を喋るようにプログラムされただけのロボットのようになってしまいます。つまり私の言いたいことは、あなたの言語を殺すなということです。
+          あああああ
         </div>
       </div>
     </slide>
@@ -70,6 +53,30 @@
         <div class="copy">
           <button class="btn btn-outline-primary" onclick="copy3()"><i class="far fa-copy"></i>全英文コピー</button>
         </div>
+
+        <div class="title">小学校に英語教育は必要ない</div>
+        <span id="english-script3">According to some data, a lot of parents try to make their children learn English as easy as possible. They want their children to become international players. The Japanese government has the same idea. This is a new education system which will start in 2020. Now, in elementary school, English education starts from when students are in fifth grade. From 2020, they will start it when they are in third grade.
+
+        In my opinion, English education in elementary school is not necessary. There are some reasons, today, I’ll tell you two reasons.
+
+        First of all, whenever you start studying English, actuary, age doesn’t matter. Many people believe that children had better study English as early as possible because they have flexible brains so that they can get knowledge or information easily. However, it is not true. I’ll show you an experiment called BAF project which lasted from 1995 to 2004. The subjects are of different ages who never studied English. They study English for the same hours and take some same tests at each period. How was it? The 8 years old group was the highest? The result is that older groups always get higher grades than younger groups. This experiment shows that age doesn’t matter. The degree of English skill depends on learning time. It’s never too late to start studying English. So that’s one reason.
+
+        Second reason
+        Two classes a week are not enough to study English. Students have several different classes every day. Under the only two classes, they easily forget what they learn. Let me give you one example. A girl who has studied English since she was in the first grade of an elementary school. She had 2 English classes a week in an elementary school. What happened to her when she was in junior high school. Actuary, her English grade was better than others. However, the wonderful times didn’t last too long. The gap between her and others was gradually closed. And finally, there were no differences. Studying English at an elementary school is good for nothing. It won’t help with anything.
+
+        I know English is on its way to becoming the world’s universal language. Japanese children should learn English. This is one reality. But we have another more important reality that we ought to think about. The language is deeply connected to forming a personal identity. Learning a lot of Japanese vocabulary and thinking a lot of things with the vocabulary is very important. If children ignore that process and learn English, they will be like a robot just speak Japanese and English. So I wwant to say is that do not kill your language.</span>
+        <br>
+        <div class="japanese-script">
+          ある統計によると、たくさんの親が早い時期から子供に英語教育をさせようとしています。彼らは子供を世界で活躍できる人材にしたいと考えています。日本政府も同じ考えを持っています。これは2020年から始まる新しい教育システムです。現在、小学校では英語の授業は小学5年生から始まっています。2020年からは小学3年生から始まる予定です。
+
+          私の意見では、小学校の英語教育は必要ないと考えています。いくつかが理由はありますが、今日は２つご紹介します。
+
+          １つ目は、いつ勉強を始めても年齢は関係ないということです。多くの人が、子供は柔軟な脳を持っているので知識や情報を取得しやすい為、できるだけ早めに英語の勉強を始めた方がいいと考えてます。しかし、それは正しくありません。1995年から2004年まで続いたBAFという実験を紹介します。被験者は年齢が異なる英語を勉強したことがない人です。彼らは同じ時間英語を勉強し、それぞれの期間に同じテストを受けました。いったい誰が一番高い点数をとったと思いますか？8歳のグループですか？結果は、年長グループが常に燃焼グループよ高い点数を取りました。英語の習熟度は勉強時間に比例します。つまり英語の勉強を始めるのに遅すぎることはありません。これが1つ目の理由です。
+
+          ２つ目の理由は、1週間に2つの授業は不十分だからです。生徒は毎日様々な授業があります。結果として学んだことをすぐに忘れてしまいます。１つの例を紹介します。彼女は小学一年生の頃から英語を学んできました。彼女は週2時間の英語の授業がありました。彼女が中学生になった時どうなったでしょうか？実際他の生徒より成績は優秀でした。しかし、そんな素晴らしい時間も長くは続きませんでした。他の生徒との差は次第になくなっていきました。そして、ついにその差はなくなりました。小学校での英語教育は何の意味も為しませんでした。
+
+          英語が世界の共通言語になりつつあるのは知っています。なので日本の子供たちは英語を学ぶ必要があります。これは１つの現実です。しかし私たちは考えなければならない、さらに大切なことがあります。言語はアイデンティティの形成に深く関わっています。日本語を多く学びたくさんのことについて考えることはとても大切なことです。もし子供たちがこの過程を無視し英語を学んでしまったら彼らは日本語と英語を喋るようにプログラムされただけのロボットのようになってしまいます。つまり私の言いたいことは、あなたの言語を殺すなということです。
+
         <div class="title">会社説明会</div>
         <span id="english-script3">Good afternoon ladies and gentlemen. Welcome to company  information session. On behalf of XXX, I would like to welcome you here today.  My talk will be in three parts.  First is company's outline. Second is corporate philosophy. Third is Recruitment information. Now let's begin.    
     First, I will talk about company's outline. Our company  is engineering and English teaching school. In engineering class, we teach programming. Students finally can  learn how to make an application in  our  class. In English class,  students learn all skills English. All teachers are talented at teaching English. By learning these two things, students can have a skill to work in other countries.
@@ -91,6 +98,7 @@ If even one applies to you, you have chance to join us. If you get interested in
           3. 常に誰か新しい人に会うことを望んでいる人
           もしこれらどれかに一つでも当てはまっていれば応募する資格があります。少しでも興味があれば、こちらまでメールをお願い致します。
           これで発表を終わります。もし質問があれば、喜んでお答え致します。ありがとうございました。
+
         </div>
       </div>
     </slide>
